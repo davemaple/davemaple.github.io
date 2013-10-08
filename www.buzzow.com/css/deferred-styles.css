@@ -1,5 +1,25 @@
+#mybuzzow {
+	margin: 50px auto 30px auto;
+}
+
+#mybuzzow h2 {
+	font-size: 1.2em;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+	margin-bottom: 0.6em;
+}
+
+#mybuzzow em {
+	font-style: italic;
+}
+
+#mybuzzow p {
+	line-height: 1.6em;
+}
+
 #plans {
-	margin: 80px auto 30px auto;
+	margin: 0px auto 30px auto;
 	position: relative;
 	min-height: 600px;
 }
@@ -98,8 +118,22 @@
 }
 
 #plans div.green div.circle span.dollars {
-	left: 7px;
-	letter-spacing: -3px;
+	left: 10px;
+}
+
+#plans div.orange div.circle span.dollars {
+	left: 5px;	
+}
+
+#plans div div.circle span.dollars small {
+	font-size: 24px;
+	position: relative;
+	top: -6px;
+	left: -4px;
+}
+
+#plans div.orange div.circle span.dollars small {
+	left: 0;
 }
 
 #plans div.green div.circle span.term {
