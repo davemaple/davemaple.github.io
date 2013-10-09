@@ -635,7 +635,7 @@
             <ul class="menu">
                 <li><a href="/">Home</a></li>       
                 <li><a href="/how-it-works">How It Works</a></li>
-                <li><a href="/plans">Plans</a></li>       
+                <li><a href="/#plans">Plans</a></li>       
                 <li><a href="/info-for-prisons">Info for Prisons</a></li>       
                 <li><a href="/contact" class="active2"><i class="icon-envelope"></i>Contact</a></li>       
                 </ul>
@@ -654,7 +654,18 @@
 				<span class="first">Voice &amp; Text Messages</span>
 				<span class="second">for Prison Inmates. Safe, Secure, &amp; Reliable. Signup Now!</span>
 				<a class="cta" id="cta1" href="/how-it-works">Read More &raquo;</a>
-				<a class="cta" id="cta2" href="/plans">Get Started &raquo;</a>
+				<a class="cta" id="cta2" href="/#plans">Get Started &raquo;</a>
+                <script>
+                    $(document).ready(function() {
+                        $("#cta2").click(function(e) {
+                            $('html, body').animate({
+                                scrollTop: $("#plans").offset().top
+                            }, 2000);
+                            
+                            e.preventDefault();
+                        });
+                    });
+                </script>
 			</div>
 		</div>
 	</div>
