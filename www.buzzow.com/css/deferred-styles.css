@@ -4,6 +4,16 @@ div#title {
 	margin: 3em auto 3em auto;
 }
 
+strong {
+	font-weight: bold;
+}
+
+#excluded {
+	margin-top: 6em;
+	font-size: 0.8em;
+	text-align: center;
+}
+
 ol {
 	list-style-type: decimal;
 	list-style-position: inside;
@@ -472,7 +482,7 @@ a.btn-buy:hover i {
 div#footer {
 	background: #363839;
 	border-top: 12px solid #CCC;
-	margin-top: 6em;
+	margin-top: 3em;
 	padding: 2em 0 1em 0;
 	width: 100%;
 	min-height: 100px;
