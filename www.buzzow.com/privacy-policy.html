@@ -3,13 +3,12 @@
 <html>
 <head>
 	<title>Buzzow&trade; :: Voicemail &amp; Text Messaging for Prison Inmates</title>
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     
 <meta name="description" content="Buzzow&trade; is a secure platform for prison inmates and their family &amp; friends to send and receive voice and text messages." />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:600,400|Raleway:700" rel="stylesheet" type="text/css" />
-
 <style>
 	html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -57,7 +56,7 @@
 		
 	/* dave's styles */
 	body {
-		background: #ededed;
+		background: #fff;
 		font-family: Arial, Verdana, Sans-Serif;
 	}
 		
@@ -185,8 +184,8 @@
 		
 	#video {
 		position: absolute;
-		left: 600px;
-		top: 0px;
+		left: 590px;
+		top: 5px;
 		width: 350px;
 		height: 234px;
 		border: 4px solid #222;
@@ -232,7 +231,7 @@
 	    z-index: 501;
     }
 
-    #defaultMessageModal {
+    #defaultMessageModal, #defaultAdminMessageModal {
         display: none;
         height: 100%;
         width: 100%;
@@ -349,15 +348,16 @@
         font-weight: bold;
     }
 
-    /* Modal popup */
+    /* 
+         popup */
 
-    #defaultMessageModal {
+    #defaultMessageModal, #defaultAdminMessageModal {
         display: none;
         height: 100%;
         width: 100%;
     }
 
-    #messageModaLoading {
+    #messageModaLoading, #adminMessageModaLoading {
 	    display:none;
         width:100px;
         height:100px;
@@ -395,7 +395,7 @@
         color: #FF0000;
     }
 
-    #messageModalMessagePanel i.icon-ok-circle {
+    i.icon-ok-circle {
         color: #48992C;
     }
 
@@ -451,14 +451,6 @@
         position: absolute;
         top: -5px;
         width: 12px;
-    }
-
-    .adomOkIcon {
-        background: url("../Images/valid.gif") no-repeat scroll left top transparent;
-    }
-    
-    .adomErrorIcon {
-        background: url("../Images/error.gif") no-repeat scroll left top transparent;
     }
         
     input.adomOk,
@@ -575,58 +567,6 @@
         text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
     }
 
-	/* new styles here */
-	body {
-		background: #FFF;
-	}
-	
-	h2 {
-		font-size: 1.4em;
-		line-height: 1.4em;
-		color: #000;
-		font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-		text-shadow: 0 1px 1px rgba(255,255,255,0.2);
-		margin: 1em 0 0.4em 0;		
-		padding-top: 1em;
-	}
-	
-	p {
-		font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-		line-height: 1.6em;
-		color: #222;
-		margin-bottom: 1.4em;
-	}
-	
-	#overview, #benefits {
-		width: 540px;
-		background: url('Images/secure.jpg') top left no-repeat;
-		height: 300px;
-		padding: 0 0 0 420px;
-	}
-	
-	#benefits {
-		background: url('Images/benefits.jpg') top left no-repeat;	
-		margin-top: 3em;
-	}
-
-	#monitoring, #buzzow {
-		width: 540px;
-		background: url('Images/monitoring.jpg') top right no-repeat;
-		height: 300px;
-		padding: 0 420px 0 0;
-		margin-top: 3em;
-	}
-	
-	#buzzow {
-		background: url('Images/iphone.jpg') top right no-repeat;
-		height: 319px;
-	}
-
-	span.first {
-		font-size: 1.8em;
-		font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-	}
-
 	#mini-slide-area {
 	  height: 50px;
 	}
@@ -660,7 +600,7 @@
 <div id="top-grey-bar">
 	<div>
 		<div class="left">
-			<span>An Inmate's Best Outside Connection</span>
+			<span>Message Your Inmate Any Time Day or Night!</span>
 		</div>
 			<div class="right">
 			    <div class="top-bar-social">
@@ -669,7 +609,7 @@
 				<div>
 					<a class="fb" href="http://www.Facebook.com/YourInterlinx"><i class="icon-facebook"></i></a>
 					<a class="tw" href="http://www.Twitter.com/Interlinx1"><i class="icon-twitter"></i></a>
-					<a class="lin" href="http://www.linkedin.com/company/3332757?trk=tyah&trkInfo=tas%3ABuzzow"><i class="icon-linkedin"></i></a>
+					<a class="lin" href="http://www.linkedin.com/company/3332757?trk=tyah&amp;trkInfo=tas%3ABuzzow"><i class="icon-linkedin"></i></a>
 					<a class="gl" href="http://plus.google.com/101287542235024304029/posts"><i class="icon-google-plus"></i></a>
 					<a class="yt" href="http://www.youtube.com/channel/UC1BPQvYr-sDw_j4qPLN7yfw"><i class="icon-youtube-sign"></i></a>
 				</div>
@@ -680,15 +620,15 @@
 <div id="top-white-bar">
 	<div>
 		<div class="left">
-			<a id="logoLink" href="/"><img id="logo" src="Images/buzzowLogoH60.png" alt="Buzzow&trade; - An Inmate's Best Outside Connection" /></a>
+			<a id="logoLink" href=""><img id="logo" src="Images/buzzowLogoH60.png" alt="Buzzow&trade;" /></a>
 		</div>
         <div id="topNav" class="right">
             <ul class="menu">
-                <li><a href="/">Home</a></li>       
-                <li><a href="/how-it-works">How It Works</a></li>
-                <li><a href="/plans">Plans</a></li>       
-                <li><a href="/info-for-prisons">Info for Prisons</a></li>       
-                <li><a href="/contact" class="active2"><i class="icon-envelope"></i>Contact</a></li>       
+                <li><a href="">Home</a></li>       
+                <li><a href="how-it-works">How It Works</a></li>
+                <li><a href="plans">Plans</a></li>       
+                <li><a href="info-for-prisons">Info for Prisons</a></li>       
+                <li><a href="contact" class="active2"><i class="icon-envelope"></i>Contact</a></li>       
                 </ul>
 		</div>
 	</div>
@@ -701,58 +641,70 @@
 </div>
 <div id="mini-footer"></div>
 
-    <div class="center relative">
-		
 		<div id="title">
-			<h1>INFORMATION FOR PRISONS</h1>
-		</div>
-		
-		<div id="overview">
-			<h2>Service Overview</h2>
-			
-			<p>
-				Buzzow Secure Server&trade; is a messaging platform that allows inmates to exchange voice and text messages with approved contacts that are already authorized by their correctional facility.
-			</p>		
-			<p>
-				Buzzow&trade; does not forward inmate phone calls to unauthorized persons nor does it permit communication with phone numbers outside the inmate's contacts list. <a href="http://www.buzzow.com/how-it-works">Click here</a> for an overview of the service. 
-			</p>
-		</div>
-		
-		<div id="monitoring">
-			<h2>Monitoring by Correctional Facilities</h2>
-			
-			<p>
-				An inmate's access to Buzzow Secure Server&trade; is limited to voice calls which are monitored by correctional facilities in the same way as any existing phone call from the inmate to an approved contact.
-			</p>		
-			
-			<p>
-				Buzzow&trade; does not enable or allow the inmate to communicate in any way which cannot be recorded by the correctional facility.
-			</p>
+			<h1>PRIVACY POLICY</h1>
 		</div>
 
-		<div id="benefits">
-			<h2>Benefits of Buzzow&trade; for Correctional Facilities</h2>
-			
-			<p>
-				Providing a reliable service for communication between inmates and their outside supporters is crucial to the rehabilitation objectives put forth by all institutions. 			
-			</p>	
-			<p>
-				Buzzow&trade; has found that inmates who use our service find it easier to maintain a healthy level of communication with a significant other, child, friend, attorney, or mentor through the use of our messaging services. Reducing stress within the inmate population has been found to improve health and mortality rates.
-			</p>	
-		</div>
-		
-		<div id="buzzow">
-			<h2>My Buzzow&trade;</h2>
-			
-			<p>
-				My Buzzow&trade; allows messaging with a single outside supporter. When an outside supporter signs up for My Buzzow&trade; they are issued a local number in the same area code as their inmate's correctional facility. 
-			</p>		
-			<p>
-				An introductory package is then mailed to the inmate with instructions indicating that they must add this local number to their inmate contact list. Once the number has been added and approved by their correctional facility, the inmate may begin utilizing Buzzow&trade; to send and receive messages with the outside supporter who initiated the account. 
-			</p>
-		</div>
-
-	</div>
+	<div class="center relative">
+			<div>
+				<p>
+					This privacy notice discloses the privacy practices for <a href="">www.buzzow.com</a>. This privacy notice applies solely to information collected by this web site. It will notify you of the following:
+				</p>
+				<ol>
+					<li>What personally identifiable information is collected from you through the web site, how it is used and with whom it may be shared.</li>
+					<li>What choices are available to you regarding the use of your data.</li>
+					<li>The security procedures in place to protect the misuse of your information.</li>
+					<li>How you can correct any inaccuracies in the information.</li>
+				</ol>
+				<h2>Information Collection, Use, and Sharing</h2>
+				<p>
+					We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. <font class="underline">We will not sell or rent this information to anyone</font>.
+				</p>
+				<p>
+					We will use your information to respond to you, regarding the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. to ship an order.
+				</p>
+				<p>
+					We request information from you on our order form. To buy from us, you must provide contact information (like name and shipping address) and financial information (like credit card number, expiration date). This information is used for billing purposes and to fill your orders. If we have trouble processing an order, we'll use this information to contact you. <font class="underline">We never store credit card information</font> in our database or in our records. 
+				</p>
+				<p>
+					Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.
+				</p>
+				<h2>Your Access to and Control Over Information </h2>
+				<p>
+					You may opt out of any future contacts from us at any time. You can do the following at any time by contacting us via the email address or phone number given on our website:
+				</p>
+				<ol>
+					<li>See what data we have about you, if any.</li>
+					<li>Change/correct any data we have about you.</li>
+					<li>Have us delete any data we have about you.</li>
+					<li>Express any concern you have about our use of your data.</li>
+				</ol>
+				<h2>Cookies</h2>
+				<p>
+					We use "session cookies" on this site and our site requires that you allow the placement of session cookies in order to function properly. Session cookies are temporary text files that <font class="underline">expire when you leave <a href="">www.buzzow.com</a></font>. Session cookies are used to keep track the pages you view on our site, the items you place in your shopping cart, and your order information when you decide to complete a purchase. When session cookies expire, they are automatically deleted from your computer.
+				</p>				
+				<p>
+					We also use "persistent cookies" on this site. A persistent cookie is a piece of data stored on your hard drive to help us improve your access to our site and identify repeat visitors to our site. Persistent cookies enable us to track and target your interests, thus enhancing your experience on our site. For instance, when we use a persistent cookie to identify you, we might display items similar to those you've shown interest to in the past, thereby saving time while on our site. <font class="underline">Usage of a persistent cookie is in no way linked to any personally identifiable information on our site</font>.					
+				</p>
+				<h2>Security</h2>
+				<p> 
+					We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.
+				</p>
+				<p>
+					Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way. You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for "https" at the beginning of the address of the web page. <font class="underline">We never store credit card information</font> in our database or in our records. The information is used to authorize your purchase and is then immediately purged from our system.
+				</p>
+				<p>
+					While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information. The computers/servers in which we store personally identifiable information are kept in a secure environment.
+				</p>
+				<p>
+					If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at 1-888-661-8839 or via email at <a href="support@buzzow">support@buzzow.com</a>.
+				</p>
+				<h2>Links</h2>
+				<p> 
+					This web site contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.			
+				</p>
+			</div>
+    </div>
 
     </div>
     
@@ -769,19 +721,19 @@
 			</address>
 		</div>
 		<div class="right">
-			<a href="/">home</a> &nbsp;/&nbsp;
-			<a href="/plans">plans</a> &nbsp;/&nbsp;
-			<a href="/how-it-works">how it works</a> &nbsp;/&nbsp;
-			<a href="/info-for-prisons">info for prisons</a> &nbsp;/&nbsp;
-			<a href="/contact">contact</a> &nbsp;/&nbsp;
-			<a href="/privacy-policy">privacy</a> &nbsp;/&nbsp;
-			<a href="/terms-of-use">terms of use</a>
+			<a href="">home</a> &nbsp;/&nbsp;
+			<a href="plans">plans</a> &nbsp;/&nbsp;
+			<a href="how-it-works">how it works</a> &nbsp;/&nbsp;
+			<a href="info-for-prisons">info for prisons</a> &nbsp;/&nbsp;
+			<a href="contact">contact</a> &nbsp;/&nbsp;
+			<a href="privacy-policy">privacy</a> &nbsp;/&nbsp;
+			<a href="terms-of-use">terms of use</a>
 			
 			<div class="follow">
 				<span>Follow Us:</span>	
 				<a class="fb" href="http://www.Facebook.com/YourInterlinx"><i class="icon icon-facebook-sign icon-2x"></i></a>
 				<a class="tw" href="http://www.Twitter.com/Interlinx1"><i class="icon icon-twitter-sign icon-2x"></i></a>
-				<a class="lin" href="http://www.linkedin.com/company/3332757?trk=tyah&trkInfo=tas%3ABuzzow"><i class="icon icon-linkedin-sign icon-2x"></i></a>
+				<a class="lin" href="http://www.linkedin.com/company/3332757?trk=tyah&amp;trkInfo=tas%3ABuzzow"><i class="icon icon-linkedin-sign icon-2x"></i></a>
 				<a class="gl" href="http://plus.google.com/101287542235024304029/posts"><i class="icon icon-google-plus-sign icon-2x"></i></a>	
 				<a class="yt" href="http://www.youtube.com/channel/UC1BPQvYr-sDw_j4qPLN7yfw"><i class="icon last icon-youtube-sign icon-2x"></i> </a>			
 			</div>
@@ -790,7 +742,6 @@
 	</div>
 </div>
 <div id="footer-black-band">
-
 	<div class="center">
 		<div class="left">
 			Copyright 2013 Buzzow&trade; | Voice &amp; Text Messaging for Inmates | All Rights Reserved 
@@ -810,7 +761,7 @@
             <div id="defaultMessageModalMessage"></div>
         
             <div class="linkButton">
-                <a id="messageModalOkButton" class="button" onclick="$('.messageModal').overlay().close(); return false;" href="#">Ok</a>
+                <a id="messageModalOkButton" class="button" onclick="$('#defaultMessageModal').overlay().close(); return false;" href="#">Ok</a>
             </div>
         </div>
     </div>
