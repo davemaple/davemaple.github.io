@@ -1,13 +1,96 @@
+div#title {
+	width: 960px;
+	text-align: center;
+	margin: 3em auto 3em auto;
+}
+
+h1 {
+	border-bottom: 2px solid #E0E0E0;
+	display: inline;
+	padding: 0 0.2em;
+	color: #000;
+	font-size: 1.2em;
+	font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+h2 {
+	font-size: 1.4em;
+	line-height: 1.4em;
+	color: #000;
+	font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.2);
+	margin: 1em 0 0.4em 0;		
+	padding-top: 1em;
+}
+
+p {
+	font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	line-height: 1.6em;
+	color: #222;
+	margin-bottom: 1.4em;
+}
+
 #mybuzzow {
-	margin: 50px auto 30px auto;
+	margin: 10px auto 30px auto;
+}
+
+#mybuzzow > div {
+	display: inline-block;
+	padding: 0 20px;
+	width: 406px;
+	background: #FFF;
+	border-radius: 12px;
+	border: 7px solid rgb(255,128,21);
+ 	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.10);
+    min-height: 200px;
+    position: relative;
+}
+
+#mybuzzow > div > i.corner {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: rgb(255,128,21);
+}
+
+#mybuzzow > div.left {
+	margin-right: 40px;
+	border: 7px solid rgb(6,153,193);
+}
+
+#mybuzzow > div.left > i {
+	color: rgb(6,153,193);
+}
+
+a.btn-buy {
+	display: inline-block;
+	text-decoration: none;
+}
+
+a.btn-buy:hover {
+	text-decoration: underline;
+}
+
+a.btn-buy i {
+	color: rgb(255,128,21);
+}
+
+a.btn-buy:hover i {
+	color: #ec7613;
+}
+
+#mybuzzow a.btn-buy h2 {
+	padding: 0;
 }
 
 #mybuzzow h2 {
 	font-size: 1.2em;
-	color: #333;
-	font-family: 'Open Sans', sans-serif;
-	text-shadow: 0 1px 1px rgba(255,255,255,0.6);
-	margin-bottom: 0.6em;
+	color: #000;
+	font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.2);
+	margin: 0 0 0.6em 0;
 }
 
 #mybuzzow em {
@@ -16,10 +99,12 @@
 
 #mybuzzow p {
 	line-height: 1.6em;
+	font-family: 'Open Sans', sans-serif;
+	color: #222;
 }
 
 #plans {
-	margin: 0px auto 30px auto;
+	margin: 50px auto 30px auto;
 	position: relative;
 	min-height: 600px;
 }
