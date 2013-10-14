@@ -14,7 +14,7 @@ strong {
 	text-align: center;
 }
 
-ol, ul {
+ol, ul.standard {
 	list-style-position: inside;
 	font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 	line-height: 1.6em;
@@ -24,11 +24,11 @@ ol {
 	list-style-type: decimal;
 }
 
-ul {
+ul.standard {
 	list-style-type: disc;	
 }
 
-ol li, ul li {
+ol li, ul.standard li {
 	padding-left: 2em;
 }
 
