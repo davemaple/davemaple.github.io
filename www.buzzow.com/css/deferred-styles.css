@@ -217,17 +217,11 @@ a.btn-buy:hover i {
 	top: 44px;
 }
 
-#plans div.blue div.circle span.dollars {
-	top: 20px;
-	left: 20px;
-}
-
-#plans div.blue div.circle span.term {
+.per-message {
 	position: absolute;
-	top: 52px;
-	left: 0px;
-	width: 90px;
-	text-align: center;
+	top: 78px;
+	left: 60px;
+	width: 200px;
 }
 
 #plans div.green div.circle span.dollars {
