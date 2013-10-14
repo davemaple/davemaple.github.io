@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buzzow&trade; :: Thank You For Signing Up!</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+<meta name="description" content="Buzzow&trade; is a secure platform for prison inmates and their family &amp; friends to send and receive voice and text messages." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:600,400|Raleway:700" rel="stylesheet" type="text/css" />
+<style>
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+		
+	/* dave's styles */
+	body {
+		background: #ededed;
+		font-family: Arial, Verdana, Sans-Serif;
+	}
+		
+	.left {
+		float: left;
+	}
+		
+	.right {
+		float: right;
+	}
+		
+	.center {
+		width: 960px;
+		margin: 0 auto;
+	}
+		
+	.relative {
+		position: relative;
+	}
+	
+    .underline {
+        text-decoration: underline;
+    }
+
+	#featured, #top-grey-bar, #mini-footer {
+		background: #45494f url('Images/greybg.gif');
+		width: 100%;
+		height: 40px;
+	}
+		
+	#featured, #mini-footer {
+		height: 79px;
+		color: #FFF;
+		text-align: center;
+	}
+	#featured  img {
+		margin: 0 auto;
+	}
+		
+	#top-white-bar {
+		background: #fbfbfb;
+		width: 100%;
+		height: 73px;
+	}
+		
+	#top-grey-bar > div, #top-white-bar > div {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#top-grey-bar > div {
+		padding: 10px 0;
+		height: 20px;
+	}
+		
+	#top-grey-bar div.left > span {
+		color: #9B9FA2;
+		font-size: 13px;
+		display: block;
+		margin: 3px 0 0 7px;		
+	}
+				
+    #logoLink {
+        border: 0;
+    }
+
+	#logo {
+		margin-top: 5px;
+	}
+
+	#slide-area,
+    #mini-slide-area {
+		background: url('Images/bg.jpg');
+		width: 100%;
+		height: 350px;
+	}
+
+    #mini-slide-area {
+        height: 100px;
+    }
+
+    #mini-footer {
+        height: 20px;
+    }
+		
+	#slide {
+		width: 100%;
+		height: 350px;	
+	}
+	
+	div.shadow {
+		position: relative;
+		top: -1px;
+		margin: 0 auto;
+		background: url('Images/shadow.png') top center no-repeat;
+		height: 42px;
+		width: 1001px;
+	}
+
+	#slide span {
+		position: absolute;
+		left: 10px;
+		color: #FFF;
+		font-family: 'Open Sans', sans-serif;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+	}
+		
+	span.first {
+		font-size: 44px;
+		color: #FFF;
+		top: 40px;
+		font-weight: 600;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+	}
+		
+	#slide span.second {
+		top: 95px;
+		font-weight: 400;	
+        font-size: 18px;
+	}
+		
+	#slide span.third {
+		top: 150px;			
+	}
+		
+	#video {
+		position: absolute;
+		left: 590px;
+		top: 5px;
+		width: 350px;
+		height: 234px;
+		border: 4px solid #222;
+		border-radius: 5px;
+		padding: 7px;
+		background: #CCC;
+	}
+		
+	.cta {
+		display: block;
+		border-radius: 4px;
+		border: 2px solid #035882;
+		padding: 10px 25px;
+		width: auto;
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+		-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+		-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+		font-family: 'Open Sans', sans-serif;
+		text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+		font-weight: 600;
+		color: #444;
+		font-size: 22px;
+		text-decoration: none;
+		position: absolute;
+		top: 150px;
+	}
+
+	#cta1 {
+		background: #EFEFEF;
+		left: 10px;
+	}
+		
+	#cta2 {
+		background: #ff6311;
+		left: 215px;
+		color: #FFF;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	}
+
+    #cartDetails {
+        display: none;
+	    width: 750px;
+	    z-index: 501;
+    }
+
+    #defaultMessageModal, #defaultAdminMessageModal {
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .top-bar-social div {
+        float: left;
+        height: 20px;
+	    color: #60646a;
+    }
+
+    .top-bar-social a {
+	    display: inline-block;
+	    width: 28px;
+	    text-align: right;
+	    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        text-decoration: none;
+	    -webkit-transition: color 0.2s ease-in-out;
+	    transition: color 0.2s ease-in-out;
+    }
+
+    i {
+	    display: inline-block;
+	    font-family: FontAwesome;
+	    font-weight: normal;
+	    font-style: normal;
+	    -webkit-font-smoothing: antialiased;
+	    font-size: inherit;
+	    color: #60646a;
+	    font-size: 16px;
+    }
+
+    div.phone {
+        width: 200px;
+        color: #959B9B;
+		font-size: 12px;
+        font-weight: bold;
+        height: 17px;
+        margin: 0 0 0 6px;
+        line-height: 17px;
+    }
+
+    a.phoneNumber {
+        width: 90px;
+    }
+
+    .phoneNumber {
+        color: #DFDFD5;
+	    font-size: inherit;
+	    font-weight: inherit;
+    }
+
+    .top-bar-social a.tw {
+	    font-size: 15px;
+    }
+
+    a.fb:hover i,
+    div#footer a.fb:hover i {
+	    color: #576ec7;
+	    text-shadow: 0 0 12px #3c4978;
+    }
+
+    a.tw:hover i,
+    div#footer a.tw:hover i {
+	    color: #5db4f0;
+	    text-shadow: 0 0 12px #3f6c8d;
+    }
+
+    a.lin:hover i,
+    div#footer a.lin:hover i {
+	    color: #007bb6;
+	    text-shadow: 0 0 12px #105070;
+    }
+
+    a.gl:hover i,
+    div#footer a.gl:hover i {
+	    color: #ba3526;
+	    text-shadow: 0 0 12px #6d2d27;
+    }
+
+    a.yt:hover i,
+    div#footer a.yt:hover i {
+        color: #ED3639;
+        text-shadow: 0 0 12px #872D31;
+    }
+
+    #plans ul {
+        margin: 130px 0 0 10px;
+    }
+
+    #plans ul li {
+        margin: 25px 15px;
+    }
+
+    #plans ul li i {
+        margin: 0 10px 0 0;
+        font-size: 20px;
+        color: #48992C;
+    }
+
+    #plans div.column1 ul li i.icon-check {
+        color: #3ea4ba;
+    }
+
+    #plans div.column2 ul li i.icon-check {
+        color: #fc610f;
+    }
+
+    #plans div.column3 ul li i.icon-check {
+        color: #48992c;
+    }
+
+    #plans .top {
+        font-weight: bold;
+    }
+
+    /* 
+         popup */
+
+    #defaultMessageModal, #defaultAdminMessageModal {
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    #messageModaLoading, #adminMessageModaLoading {
+	    display:none;
+        width:100px;
+        height:100px;
+        background: url("../Images/wait.gif") no-repeat center center;
+        margin: 200px auto;
+    }
+
+    #defaultMessageModalTitle {
+        color:#48992c;
+        margin: 0 0 20px 0;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    #defaultMessageModalTitle.error {
+        color:#FF0000;
+    }
+
+    .messageModal .linkButton {
+        margin: 20px 0 0 0;
+    }
+
+
+    .messageModal div {
+        text-align: center;
+    }
+
+    #messageModalMessagePanel i {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+    }
+
+    #messageModalMessagePanel i.icon-exclamation {
+        color: #FF0000;
+    }
+
+    i.icon-ok-circle {
+        color: #48992C;
+    }
+
+    .modalPanel {
+	    background-color:#fff;
+        position: relative;
+	    display:none;
+	    width:350px;
+	    padding:15px;
+	    text-align:left;
+	    border:2px solid #AAAAAA;
+        margin: 100px auto;
+        z-index:299;
+	    opacity:0.85;
+	    -moz-border-radius:6px;
+	    -webkit-border-radius:6px;
+	    border-radius:6px;
+	    -moz-box-shadow: 0 0 50px #ccc;
+	    -webkit-box-shadow: 0 0 50px #ccc;
+	    box-shadow: 0 0 50px #ccc;
+    }
+
+
+    /* Slide Labels */
+
+    .slidingLabelsTable > tbody > tr > td {
+        height: 53px;
+    }
+
+    .formTable {
+        margin: 8px 0 0;
+    }
+
+    .formTable tr td {
+		vertical-align: middle;
+    }
+
+    .formErrorPanel {
+        position: absolute;
+        top: 0;
+        left: 440px;
+        width: 200px;
+        text-align: left;
+        color: #ff0000;
+        margin: 110px 0 0 60px;    
+        list-style: disc outside none;
+    }
+
+    .adomValIcon {
+        display: block;
+        height: 12px;
+        left: -5px;
+        position: absolute;
+        top: -5px;
+        width: 12px;
+    }
+        
+    input.adomOk,
+    select.adomOk,
+    textarea.adomOk {
+        border: 1px solid green;
+    }
+    
+    input.adomError,
+    select.adomError,
+    textarea.adomError {
+        border: 1px solid red;
+    }
+
+    .fieldSeparationCell {
+        width: 20px;
+    }
+
+    .rounded {
+        border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border: 1px solid #444444;
+        padding: 5px;
+        vertical-align: middle;
+        /*text-shadow: 1px 1px 1px #000000;*/
+        font-size: .9em;
+        height:17px;
+        width:100px;
+    }
+    
+    .roundedDrop {
+        background-color: #ffffff;
+        padding: 4px 4px 4px 2px;
+        height:29px;
+        width:132px;
+    }
+
+    .slideLabel label {
+        display: block;
+        font-size: .8em;
+        color: #504A4B;
+    }
+
+    /* Menu */
+
+    .menu > li:before, .menu a.active:before {
+        background: none repeat scroll 0 0 #E34735;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 0;
+        left: 30px;
+        position: absolute;
+        right: 0px;
+    }
+    .menu > li {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .menu li {
+        position: relative;
+        text-align: left;
+    }
+
+    .menu li i {
+        color: #CED3D5;
+        margin-right: 7px;
+        text-shadow: 0 1px 0 white;
+    }
+    i {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: inherit;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    .menu > li > a {
+        color: #484C4F;
+        line-height: 73px;
+        padding: 0 0 0 30px;
+    }
+    .menu a {
+        display: block;
+        font-size: 14px;
+        position: relative;
+        text-decoration: none;
+        transition: none 0s ease 0s;
+    }
+    /* 0078b4 */
+
+    .menu a.active, .menu a:hover {
+        color: #0078b4;
+    }
+
+    .menu > li:hover:before, .menu a.active:before {
+        height: 2px;
+    }
+    .menu > li:before, .menu a.active:before {
+        background: none repeat scroll 0 0 #FF6311;
+    }
+
+    .watermark {
+        position: absolute;
+        left: 440px;
+        top: 0;
+    }
+
+    .formTitle {
+        color: #444444;
+        font-size: 22px;
+        font-weight: 600;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    }
+
+	#mini-slide-area {
+	  height: 50px;
+	}
+
+	#next-steps {
+		width: 900px;
+		padding: 10px 20px 20px 20px;
+		margin-top: 3em;
+		background: #FFF;
+  		border: 7px solid rgb(98,179,57);
+  		box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  		border-radius: 12px;
+	}
+
+	#next-steps h2 {
+		padding: 0.5em 0 0;
+		margin: 0 0 0.6em;
+	}
+
+	#next-steps i.corner {
+		position: absolute;
+		top: 3px;
+		right: 10px;
+		color: rgb(98,179,57);
+	}
+
+	#next-steps ol li {
+		line-height: 2.4em;
+	}
+
+	#next-steps em {
+		font-style: italic;
+		font-weight: bold;
+	}
+</style>
+<link href="css/deferred-styles.css" rel="stylesheet" type="text/css" />
+    
+    <script src="Controls/Js/jquery.min_1_7_2.js" type="text/javascript"></script>
+    <script src="Controls/Js/jquery.tools.min.js?v=13091201" type="text/javascript"></script>
+    <script src="Js/buzzow.js?v=13091201" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-44008305-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        jQuery(document).ready(function () {
+            buzzow.init();
+        });
+	</script>
+    
+</head>
+<body>
+    <div id="mainSiteDiv">
+        
+<div id="top-grey-bar">
+	<div>
+		<div class="left">
+			<span>Message Your Inmate Any Time Day or Night!</span>
+		</div>
+			<div class="right">
+			    <div class="top-bar-social">
+                <div><i class="icon-phone"></i></div>
+                    <div class="phone">Call us: <a href="tel:+18886618839" class="phoneNumber">1-888-661-8839</a></div>
+				<div>
+					<a class="fb" href="http://www.Facebook.com/YourInterlinx"><i class="icon-facebook"></i></a>
+					<a class="tw" href="http://www.Twitter.com/Interlinx1"><i class="icon-twitter"></i></a>
+					<a class="lin" href="http://www.linkedin.com/company/3332757?trk=tyah&amp;trkInfo=tas%3ABuzzow"><i class="icon-linkedin"></i></a>
+					<a class="gl" href="http://plus.google.com/101287542235024304029/posts"><i class="icon-google-plus"></i></a>
+					<a class="yt" href="http://www.youtube.com/channel/UC1BPQvYr-sDw_j4qPLN7yfw"><i class="icon-youtube-sign"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="top-white-bar">
+	<div>
+		<div class="left">
+			<a id="logoLink" href=""><img id="logo" src="Images/buzzowLogoH60.png" alt="Buzzow&trade;" /></a>
+		</div>
+        <div id="topNav" class="right">
+            <ul class="menu">
+                <li><a href="">Home</a></li>       
+                <li><a href="how-it-works">How It Works</a></li>
+                <li><a href="plans">Plans</a></li>       
+                <li><a href="info-for-prisons">Info for Prisons</a></li>       
+                <li><a href="contact" class="active2"><i class="icon-envelope"></i>Contact</a></li>       
+                </ul>
+		</div>
+	</div>
+</div>
+ 
+        
+    
+<div id="mini-slide-area">
+	<div class="shadow">&nbsp;</div>
+</div>
+<div id="mini-footer"></div>
+
+<div id="title">
+	<h1>THANK YOU!</h1>
+</div>
+
+<div class="center" id="mybuzzow">
+    <div class="left">
+        <i class="icon-comments icon-3x corner"></i>
+        <h2>Your Messages Are Ready!</h2>
+        <p>
+        	Your message pack has been added to your account and you are ready to start messaging. You will receive a recipt by email.
+        	Please add <a href="mailto:support@buzzow.com">support@buzzow.com</a> to your email contacts to ensure delivery.
+        </p>
+    </div>
+    <div class="more">
+        <i class="icon-comments-alt icon-3x corner"></i>
+        <h2>My Buzzow&trade;</h2>
+        <p>Our revolutionary platform gives you and your inmate the ability to send each other voice and text messages! Enjoy the freedom of a personal message line that <em>exclusively</em> connects you and your inmate!</p>
+    </div>
+</div>
+
+<div id="next-steps" class="center relative">
+	<i class="icon-user icon-4x corner"></i>
+	<h2>Need Assistance with your Account?</h2>
+	<ul>
+		<li>Call us anytime at 1-888-661-8839. A member of our staff would be glad to assist you.</li>
+		<li>Send us email at <a href="mailto:support@buzzow.com">support@buzzow.com</a></li>
+		<li>Use our contact form located <a href="/contact">here</a>.</li>
+	</ul>
+</div>
+
+
+    
+<div id="footer">
+	<div class="center">
+		<div class="left">
+			<img src="Images/bee-trans.png" width="40" height="32" alt="Buzzow! Bee" />
+			<address>
+				<em>Buzzow!&trade;</em><br />
+				P.O. Box 3782, Peabody, MA 01961<br />
+				Phone: <a href="tel:+18886618839" class="phoneNumber">1-888-661-8839</a> / Fax: 1-781-592-1478<br />
+				Email: <a href="mailto:support@buzzow.com">support@buzzow.com</a>			
+			</address>
+		</div>
+		<div class="right">
+			<a href="">home</a> &nbsp;/&nbsp;
+			<a href="plans">plans</a> &nbsp;/&nbsp;
+			<a href="how-it-works">how it works</a> &nbsp;/&nbsp;
+			<a href="info-for-prisons">info for prisons</a> &nbsp;/&nbsp;
+			<a href="contact">contact</a> &nbsp;/&nbsp;
+			<a href="privacy-policy">privacy</a> &nbsp;/&nbsp;
+			<a href="terms-of-use">terms of use</a>
+			
+			<div class="follow">
+				<span>Follow Us:</span>	
+				<a class="fb" href="http://www.Facebook.com/YourInterlinx"><i class="icon icon-facebook-sign icon-2x"></i></a>
+				<a class="tw" href="http://www.Twitter.com/Interlinx1"><i class="icon icon-twitter-sign icon-2x"></i></a>
+				<a class="lin" href="http://www.linkedin.com/company/3332757?trk=tyah&amp;trkInfo=tas%3ABuzzow"><i class="icon icon-linkedin-sign icon-2x"></i></a>
+				<a class="gl" href="http://plus.google.com/101287542235024304029/posts"><i class="icon icon-google-plus-sign icon-2x"></i></a>	
+				<a class="yt" href="http://www.youtube.com/channel/UC1BPQvYr-sDw_j4qPLN7yfw"><i class="icon last icon-youtube-sign icon-2x"></i> </a>			
+			</div>
+			
+		</div>
+	</div>
+</div>
+<div id="footer-black-band">
+	<div class="center">
+		<div class="left">
+			Copyright 2013 Buzzow&trade; | Voice &amp; Text Messaging for Inmates | All Rights Reserved 
+		</div>
+		<div class="right">
+			<div class="cards">&nbsp;</div>			
+		</div>
+	</div>
+</div>
+
+ 
+    <div class="messageModal" id="defaultMessageModal">
+        <div id="messageModaLoading"></div>
+        <div id="messageModalMessagePanel" class="modalPanel">
+            <i class="icon-3x"></i>
+            <div id="defaultMessageModalTitle"></div>
+            <div id="defaultMessageModalMessage"></div>
+        
+            <div class="linkButton">
+                <a id="messageModalOkButton" class="button" onclick="$('#defaultMessageModal').overlay().close(); return false;" href="#">Ok</a>
+            </div>
+        </div>
+    </div>
+	<div id="cartDetails" class="messageModal modalPanel">
+		<div class="content_wrap">
+		</div>
+	</div>
+    
+
+</body>
+</html>
