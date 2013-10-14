@@ -222,6 +222,8 @@ a.btn-buy:hover i {
 	top: 78px;
 	left: 60px;
 	width: 200px;
+	font-family: "Raleway";
+	font-weight: normal;
 }
 
 #plans div.green div.circle span.dollars {
