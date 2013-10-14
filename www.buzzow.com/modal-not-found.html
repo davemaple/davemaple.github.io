@@ -962,6 +962,11 @@
             left: 5px;
         }
 
+        #findAccountForm span.error {
+            padding: 10px;
+            color: #CC0000;
+            font-size: 0.8em;
+        }
 
     </style>
 
@@ -1753,7 +1758,6 @@
                         Buzzow&trade; phone number<br />
                         where messages will be added.
                     </h2>
-                    
                     <div id="accountPhoneTextBox_panel" class="slideLabel" style="text-align:left;">
 
                         <label for="accountPhoneTextBox_textBox" id="label" slideTarget="accountPhoneTextBox_textBox">Account Phone #</label>
@@ -1761,7 +1765,9 @@
                         <span id="accountPhoneTextBox_textBoxIcon" class="adomValIcon"></span>
                         <a class="go" href="#"><i class="icon-chevron-sign-right icon-2x"></i></a>
                     </div>
-
+                    <span class="error">
+                        We were unable to locate the Buzzow&trade; phone number provided in our system. Please check the number and try again.
+                    </span>
                 </div>
             </div>
             <div id="overlay">
