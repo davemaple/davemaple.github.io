@@ -1,0 +1,1810 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buzzow&trade; :: Voicemail &amp; Text Messaging for Prison Inmates</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    
+<meta name="description" content="Buzzow&trade; is a secure platform for prison inmates and their family &amp; friends to send and receive voice and text messages." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:600,400|Raleway:700" rel="stylesheet" type="text/css" />
+<style>
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+		
+	/* dave's styles */
+	body {
+		background: #ededed;
+		font-family: Arial, Verdana, Sans-Serif;
+	}
+		
+	.left {
+		float: left;
+	}
+		
+	.right {
+		float: right;
+	}
+		
+	.center {
+		width: 960px;
+		margin: 0 auto;
+	}
+		
+	.relative {
+		position: relative;
+	}
+	
+    .underline {
+        text-decoration: underline;
+    }
+
+	#featured, #top-grey-bar, #mini-footer {
+		background: #45494f url('Images/greybg.gif');
+		width: 100%;
+		height: 40px;
+	}
+		
+	#featured, #mini-footer {
+		height: 79px;
+		color: #FFF;
+		text-align: center;
+	}
+	#featured  img {
+		margin: 0 auto;
+	}
+		
+	#top-white-bar {
+		background: #fbfbfb;
+		width: 100%;
+		height: 73px;
+	}
+		
+	#top-grey-bar > div, #top-white-bar > div {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#top-grey-bar > div {
+		padding: 10px 0;
+		height: 20px;
+	}
+		
+	#top-grey-bar div.left > span {
+		color: #9B9FA2;
+		font-size: 13px;
+		display: block;
+		margin: 3px 0 0 7px;		
+	}
+				
+    #logoLink {
+        border: 0;
+    }
+
+	#logo {
+		margin-top: 5px;
+	}
+
+	#slide-area,
+    #mini-slide-area {
+		background: url('Images/bg.jpg');
+		width: 100%;
+		height: 350px;
+	}
+
+    #mini-slide-area {
+        height: 100px;
+    }
+
+    #mini-footer {
+        height: 20px;
+    }
+		
+	#slide {
+		width: 100%;
+		height: 350px;	
+	}
+	
+	div.shadow {
+		position: relative;
+		top: -1px;
+		margin: 0 auto;
+		background: url('Images/shadow.png') top center no-repeat;
+		height: 42px;
+		width: 1001px;
+	}
+
+	#slide span {
+		position: absolute;
+		left: 10px;
+		color: #FFF;
+		font-family: 'Open Sans', sans-serif;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+	}
+		
+	span.first {
+		font-size: 44px;
+		color: #FFF;
+		top: 40px;
+		font-weight: 600;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+	}
+		
+	#slide span.second {
+		top: 95px;
+		font-weight: 400;	
+        font-size: 18px;
+	}
+		
+	#slide span.third {
+		top: 150px;			
+	}
+		
+	#video {
+		position: absolute;
+		left: 590px;
+	    top: 5px;
+		width: 350px;
+		height: 234px;
+		border: 4px solid #222;
+		border-radius: 5px;
+		padding: 7px;
+		background: #CCC;
+	}
+		
+	.cta {
+		display: block;
+		border-radius: 4px;
+		border: 2px solid #035882;
+		padding: 10px 25px;
+		width: auto;
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+		-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+		-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+		font-family: 'Open Sans', sans-serif;
+		text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+		font-weight: 600;
+		color: #444;
+		font-size: 22px;
+		text-decoration: none;
+		position: absolute;
+		top: 150px;
+	}
+
+	#cta1 {
+		background: #EFEFEF;
+		left: 10px;
+	}
+		
+	#cta2 {
+		background: #ff6311;
+		left: 215px;
+		color: #FFF;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	}
+
+    #cartDetails {
+        display: none;
+	    width: 750px;
+	    z-index: 501;
+    }
+
+    #defaultMessageModal, #defaultAdminMessageModal {
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .top-bar-social div {
+        float: left;
+        height: 20px;
+	    color: #60646a;
+    }
+
+    .top-bar-social a {
+	    display: inline-block;
+	    width: 28px;
+	    text-align: right;
+	    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        text-decoration: none;
+	    -webkit-transition: color 0.2s ease-in-out;
+	    transition: color 0.2s ease-in-out;
+    }
+
+    i {
+	    display: inline-block;
+	    font-family: FontAwesome;
+	    font-weight: normal;
+	    font-style: normal;
+	    -webkit-font-smoothing: antialiased;
+	    font-size: inherit;
+	    color: #60646a;
+	    font-size: 16px;
+    }
+
+    div.phone {
+        width: 200px;
+        color: #959B9B;
+		font-size: 12px;
+        font-weight: bold;
+        height: 17px;
+        margin: 0 0 0 6px;
+        line-height: 17px;
+    }
+
+    a.phoneNumber {
+        width: 90px;
+    }
+
+    .phoneNumber {
+        color: #DFDFD5;
+	    font-size: inherit;
+	    font-weight: inherit;
+    }
+
+    .top-bar-social a.tw {
+	    font-size: 15px;
+    }
+
+    a.fb:hover i,
+    div#footer a.fb:hover i {
+	    color: #576ec7;
+	    text-shadow: 0 0 12px #3c4978;
+    }
+
+    a.tw:hover i,
+    div#footer a.tw:hover i {
+	    color: #5db4f0;
+	    text-shadow: 0 0 12px #3f6c8d;
+    }
+
+    a.lin:hover i,
+    div#footer a.lin:hover i {
+	    color: #007bb6;
+	    text-shadow: 0 0 12px #105070;
+    }
+
+    a.gl:hover i,
+    div#footer a.gl:hover i {
+	    color: #ba3526;
+	    text-shadow: 0 0 12px #6d2d27;
+    }
+
+    a.yt:hover i,
+    div#footer a.yt:hover i {
+        color: #ED3639;
+        text-shadow: 0 0 12px #872D31;
+    }
+
+    #plans ul {
+        margin: 130px 0 0 10px;
+    }
+
+    #plans ul li {
+        margin: 25px 15px;
+    }
+
+    #plans ul li i {
+        margin: 0 10px 0 0;
+        font-size: 20px;
+        color: #48992C;
+    }
+
+    #plans div.column1 ul li i.icon-check {
+        color: #3ea4ba;
+    }
+
+    #plans div.column2 ul li i.icon-check {
+        color: #fc610f;
+    }
+
+    #plans div.column3 ul li i.icon-check {
+        color: #48992c;
+    }
+
+    #plans .top {
+        font-weight: bold;
+    }
+
+    /* 
+         popup */
+
+    #defaultMessageModal, #defaultAdminMessageModal {
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    #messageModaLoading, #adminMessageModaLoading {
+	    display:none;
+        width:100px;
+        height:100px;
+        background: url("../Images/wait.gif") no-repeat center center;
+        margin: 200px auto;
+    }
+
+    #defaultMessageModalTitle {
+        color:#48992c;
+        margin: 0 0 20px 0;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    #defaultMessageModalTitle.error {
+        color:#FF0000;
+    }
+
+    .messageModal .linkButton {
+        margin: 20px 0 0 0;
+    }
+
+
+    .messageModal div {
+        text-align: center;
+    }
+
+    #messageModalMessagePanel i {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+    }
+
+    #messageModalMessagePanel i.icon-exclamation {
+        color: #FF0000;
+    }
+
+    i.icon-ok-circle {
+        color: #48992C;
+    }
+
+    .modalPanel {
+	    background-color:#fff;
+        position: relative;
+	    display:none;
+	    width:350px;
+	    padding:15px;
+	    text-align:left;
+	    border:2px solid #AAAAAA;
+        margin: 100px auto;
+        z-index:299;
+	    opacity:0.85;
+	    -moz-border-radius:6px;
+	    -webkit-border-radius:6px;
+	    border-radius:6px;
+	    -moz-box-shadow: 0 0 50px #ccc;
+	    -webkit-box-shadow: 0 0 50px #ccc;
+	    box-shadow: 0 0 50px #ccc;
+    }
+
+
+    /* Slide Labels */
+
+    .slidingLabelsTable > tbody > tr > td {
+        height: 53px;
+    }
+
+    .formTable {
+        margin: 8px 0 0;
+    }
+
+    .formTable tr td {
+		vertical-align: middle;
+    }
+
+    .formErrorPanel {
+        position: absolute;
+        top: 65px;
+        left: 440px;
+        width: 200px;
+        text-align: left;
+        color: #ff0000;
+        margin: 110px 0 0 60px;    
+        list-style: disc outside none;
+    }
+
+    .adomValIcon {
+        display: block;
+        height: 12px;
+        left: -5px;
+        position: absolute;
+        top: -5px;
+        width: 12px;
+    }
+        
+    input.adomOk,
+    select.adomOk,
+    textarea.adomOk {
+        border: 1px solid green;
+    }
+    
+    label.adomError {
+        color: #ff0000;
+    }
+    
+    input.adomError,
+    select.adomError,
+    textarea.adomError {
+        border: 1px solid #ff0000;
+    }
+
+    .fieldSeparationCell {
+        width: 20px;
+    }
+
+    .rounded {
+        border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border: 1px solid #444444;
+        padding: 5px;
+        vertical-align: middle;
+        /*text-shadow: 1px 1px 1px #000000;*/
+        font-size: .9em;
+        height:17px;
+        width:100px;
+    }
+    
+    .roundedDrop {
+        background-color: #ffffff;
+        padding: 4px 4px 4px 2px;
+        height:29px;
+        width:132px;
+    }
+
+    .slideLabel label {
+        display: block;
+        font-size: .8em;
+        color: #504A4B;
+    }
+
+    /* Menu */
+
+    .menu > li:before, .menu a.active:before {
+        background: none repeat scroll 0 0 #E34735;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 0;
+        left: 30px;
+        position: absolute;
+        right: 0px;
+    }
+    .menu > li {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .menu li {
+        position: relative;
+        text-align: left;
+    }
+
+    .menu li i {
+        color: #CED3D5;
+        margin-right: 7px;
+        text-shadow: 0 1px 0 white;
+    }
+    i {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: inherit;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    .menu > li > a {
+        color: #484C4F;
+        line-height: 73px;
+        padding: 0 0 0 30px;
+    }
+    .menu a {
+        display: block;
+        font-size: 14px;
+        position: relative;
+        text-decoration: none;
+        transition: none 0s ease 0s;
+    }
+    /* 0078b4 */
+
+    .menu a.active, .menu a:hover {
+        color: #0078b4;
+    }
+
+    .menu > li:hover:before, .menu a.active:before {
+        height: 2px;
+    }
+    .menu > li:before, .menu a.active:before {
+        background: none repeat scroll 0 0 #FF6311;
+    }
+
+    .watermark {
+        position: absolute;
+        left: 440px;
+        top: 65px;
+    }
+
+    .formTitle {
+        color: #444444;
+        font-size: 22px;
+        font-weight: 600;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    }
+</style>
+<link href="css/deferred-styles.css?v=13101401" rel="stylesheet" type="text/css" />
+
+    
+    <style>
+        .checkout .watermark {
+            top: 220px;
+        }
+
+        #emailTextBox_textBox,
+        #commentsTextBox_textBox,
+        #institutionAddressTextBox_textBox,
+        #addressLine1TextBox_textBox,
+        #addressLine2TextBox_textBox {
+            width: 422px;
+        }
+
+        #commentsTextBox_textBox {
+            height: 100px;
+        }
+
+        #institutionTypeDropDownList_list {
+            width: 120px;
+        }
+
+        #phoneTextBox_textBox,
+        #inmateNumberTextBox_textBox,
+        #institutionZipCodeTextBox_textBox {
+            width: 107px;
+        }
+
+        #institutionTypeDropDownList_list,
+        #institutionStateDropDownList_list,
+        #cardExpiresMonthDropDownList_list,
+        #cardExpirationYearDropDownList_list,
+        #stateDropDownList_list {
+            width: 137px;
+        }
+
+        #institutionNameTextBox_textBox {
+            width: 282px;
+        }
+
+        #contactCommentTable {
+            margin: 12px 0 0 0;
+        }
+
+        #subjectDropDownList_list {
+            width: 433px;
+        }
+
+        #institutionCountyTextBox_panel {
+            display: none;
+        }
+
+        #zipCodeTextBox_textBox,
+        #institutionZipCodeTextBox_textBox {
+            width: 43px;
+        }
+
+        #zipPlus4TextBox_textBox,
+        #institutionZipPlus4TextBox_textBox {
+            width: 36px;
+        }
+
+        #firstNameTextBox_textBox,
+        #lastNameTextBox_textBox,
+        #cardFirstNameTextBox_textBox,
+        #cardLastNameTextBox_textBox,
+        #inmateFirstNameTextBox_textBox,
+        #inmateLastNameTextBox_textBox,
+        #institutionCityTextBox_textBox,
+        #institutionCountyTextBox_textBox,
+        #cityTextBox_textBox {
+            width: 125px;
+        }
+
+        #cardApprovedPanel,
+        #inmateDetailsPanel {
+            display: none;
+            width: 433px;
+        }
+
+        #nonRegistrationThankYouPanel {
+            display: none;
+        }
+
+        #checkoutSuccessIcon {
+            margin: 4px 0 0 0;
+        }
+
+        #checkoutSuccess {
+            background-color: #EEFEDA;
+            margin: 10px 0 0 0;
+            padding: 0 0 0 20px;
+            border-radius: 7px;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+            border: 2px solid #48992C;
+            height: 89px;
+    		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+        }
+
+        #checkoutSuccess div {
+            float: left;
+        }
+
+        #ccApproved {
+            width: 265px;
+            text-align: center;
+            color: #48992C;
+            font-size: 20px;
+            line-height: 24px;
+            padding: 10px 0 0 25px;
+        }
+
+        #inmateDetailPanel {
+            padding: 10px 0 0 0;
+            clear: both;
+        }
+
+        #orderNumberPanel {
+            width: 265px;
+            text-align: center;
+            color: #000000;
+            font-size: 12px;
+        }
+
+        #orderNumberPanel span {
+            font-size: 14px;
+        }
+
+        #nextStepsPanel {
+            display: none;
+            width: 745px;
+        }
+
+        #cardNumberTextBox_textBox {
+            width: 150px;
+        }
+
+        #cvv2TextBox_panel {
+            margin: 0 0 0 20px;
+        }
+
+        #cityTextBox_textBox {
+            width: 120px;
+        }
+
+        #useDiffNameCell label {
+            font-size: 13px;
+            color: #333333;
+        }
+
+        #purchasePanel > div.orange > div.bar {
+	        position: absolute;
+	        top: 15px;
+	        left: 139px;
+	        width: 260px;
+	        height: 30px;
+            padding: 0;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        #purchasePanel > div.orange {
+	        position: absolute;
+	        top: 1px;
+	        left: 336px;
+        }
+
+        #purchasePanel div.orange > div.triangle1 {
+	        position: absolute;
+	        top: 45px;
+	        left: 139px;
+	        width: 0; 
+	        height: 0; 
+	        border-left: 11px solid transparent;	
+	        border-top: 11px solid #cf4b05;
+        }
+
+        #purchasePanel div.orange > div.triangle2 {
+	        position: absolute;
+	        top: 45px;
+	        left: 390px;
+	        width: 0; 
+	        height: 0; 
+	        border-right: 9px solid transparent;	
+	        border-top: 11px solid #d14f0e;
+        }
+        #checkoutDetailsPanel {
+            left: 485px;
+            position: absolute;
+        }
+
+        #checkoutTotalPanel {
+            width: 240px;
+            min-height: 100px;
+            height: 120px;
+            text-align: center;
+            color: #333333;
+            font-size: 15px;
+            position: relative;
+        }
+
+        #checkoutTotalPanel.discounted {
+            height: 202px;
+        }
+
+        #cardInfoPanel {
+            margin: 10px 0 0 0;
+            width: 437px;
+        }
+
+        #checkoutDesc {
+            margin: 60px 0 0 0;
+        }
+        
+        #checkoutAmountPanel, #discountedCheckoutAmountPanel {
+            padding: 5px 0 0 0;            
+        }
+
+        #checkoutAmountDesc,#discountedCheckoutAmountDesc {
+            font-size: 13px;
+            margin: 0 0 0 5px;
+        }
+
+        #checkoutAmount, #discountedCheckoutAmount {
+            font-size: 30px;
+            font-weight: 600;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+        }
+
+        #checkoutAmountDesc, #discountedCheckoutAmountDesc {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .totalValue {
+            display: inline-block;
+            text-align: right;
+            margin: 0 5px 0 0;
+        }
+
+        .totalPanel {
+            margin: 5px 0 0 0;
+        }
+
+        #checkoutAmountDesc .totalValue, #discountedCheckoutAmountDesc .totalValue {
+        }
+
+        #checkoutAmountDesc .totalPanel, #discountedCheckoutAmountDesc .totalPanel {
+            margin: 2px 0 0 0;
+        }
+
+        .strikePrice {
+            text-decoration: line-through;
+        }
+
+        .formErrorPanel {
+            height: 200px;
+            margin: 260px 0 0 60px;
+        }
+
+        #mini-slide-area {
+            padding: 42px 0 0 0;
+        }
+        #mini-slide-area {
+            height: 58px;
+        }
+
+        #logoPanel {
+            position: absolute;
+            left: 764px;
+        }
+
+        #cardInfoTitle {
+            margin: 10px 0 0 0;
+            position: relative;
+        }
+        #cardInfoTitle div {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 3px;
+            top: 0;
+        }
+        #mainSiteDiv {
+            min-height: 500px;
+        }
+        #footer-light-gray-band {
+            margin: 25px 0 0 0;
+            background: none repeat scroll 0 0 #cccccc;
+            height: 10px;
+        }
+        #footer-dark-gray-band {
+            background: none repeat scroll 0 0 #363839;
+            height: 80px;
+        }
+
+        #nextStepsPanel ul {
+            list-style: disc outside none;
+        }
+
+        #couponCodePanel {
+            margin: 35px auto 0;
+            width: 110px;
+        }
+
+        #applyCouponButton.button {
+            height: 30px;
+            line-height: 30px;
+            width: 100px;
+            margin: 10px auto 0;
+            font-size: 17px;
+        }
+
+        #agreeToTermsLabel {
+            font-size: 11px;
+            color: #999999;
+        }
+
+        #agreeToTermsLabel.adomError {
+            color: #ff0000;
+        }
+
+        #agreeToTermsLabelPanel {
+            display: inline-block;
+            width: 375px;
+        }
+
+        #discountedTotalDescPanel {
+            margin: 10px 5px 0;
+            font-weight: bold;
+            color: #48992c;
+        }
+
+        #acceptToneDropDownList_list {
+            width: 75px;
+        }
+
+        #findAccountModal {
+            display: none;
+        }
+
+        #agreeToTermsPanel input {
+            vertical-align: top;
+        }
+
+        #findAccountForm {
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+            -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+            -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);            
+        }
+
+        #findAccountForm i {
+            color: #FF8015;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+
+        #findAccountForm h2 {
+            margin: 0;
+        }
+
+        #accountPhoneTextBox_panel {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #accountPhoneTextBox_panel input[type=text] {
+            width: 250px;
+            height: 20px;
+            background: #ffffff; /* Old browsers */
+            background: -moz-linear-gradient(top,  #ffffff 0%, #eff2f7 75%, #ffffff 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(75%,#eff2f7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #ffffff 0%,#eff2f7 75%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #ffffff 0%,#eff2f7 75%,#ffffff 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #ffffff 0%,#eff2f7 75%,#ffffff 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #ffffff 0%,#eff2f7 75%,#ffffff 100%); /* W3C */
+        }
+
+        #accountPhoneTextBox_panel a.go {
+            text-decoration: none;
+        }
+
+        #accountPhoneTextBox_panel a.go i {
+            position: relative;
+            left: 5px;
+        }
+
+
+    </style>
+
+    <script src="Controls/JS/jquery.min_1_7_2.js" type="text/javascript"></script>
+    <script src="Controls/JS/jquery.tools.min.js?v=13101401" type="text/javascript"></script>
+    <script src="JS/buzzow.js?v=13101401" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-44008305-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        jQuery(document).ready(function () {
+            buzzow.init();
+        });
+	</script>
+    
+    <script src="Controls/JS/adomControlValidate.js?v=13101401" type="text/javascript"></script>
+    <script src="Controls/JS/adomControlValidateText.js?v=13101401" type="text/javascript"></script>
+    <script src="Controls/JS/SlideLabels.js?v=13101401" type="text/javascript"></script>
+    <script src="JS/cart.js?v=13101401" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#form1').slidinglabels();
+            AdomJs.validateAllControls({ evenIfEmpty: false, waitForAjaxCalls: false });
+            $('#institutionTypeDropDownList_list').change(function () { buzzowCart.institutionTypeChange(); });
+            buzzowCart.checkoutInit();
+        });
+    </script>
+
+</head>
+<body>
+    <div id="mainSiteDiv">
+         
+        
+<div id="mini-slide-area">
+    <div class="center">
+        <div id="mini-slide-title">
+            <span class="first">Checkout</span>
+        </div>
+    </div>
+</div>
+<div id="mini-footer"></div>
+	<div class="center relative checkout">
+        <img class="watermark" src="Images/buzzow-watermarks.png"/>
+        <div id="logoPanel">
+            <img id="logo" src="Images/buzzowLogoH60.png" alt="Buzzow&trade; - An Inmate's Best Outside Connection" />
+        </div>
+        <form method="post" action="Checkout.aspx?am=t" id="form1" enctype="multipart/form-data">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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A29mZmQCDw9kFgJmD2QWBAIBDw9kFgIfAQUgaW5zdGl0dXRpb25UeXBlRHJvcERvd25MaXN0X2xpc3RkAgMPEA9kFgIfAgUDb2ZmZGRkAhEPZBYCZg9kFgQCAQ8PZBYCHwEFIGluc3RpdHV0aW9uQ291bnR5VGV4dEJveF90ZXh0Qm94ZAIDDw9kFgIfAgUDb2ZmZAITD2QWAmYPZBYEAgEPD2QWAh8BBR9pbnN0aXR1dGlvblBob25lVGV4dEJveF90ZXh0Qm94ZAIDDw9kFgIfAgUDb2ZmZAIVD2QWAmYPZBYEAgEPD2QWAh8BBRthY2NlcHRUb25lRHJvcERvd25MaXN0X2xpc3RkAgMPEA9kFgIfAgUDb2ZmZGRkAhcPZBYCZg9kFgQCAQ8PZBYCHwEFHmluc3RpdHV0aW9uTmFtZVRleHRCb3hfdGV4dEJveGQCAw8PZBYCHwIFA29mZmQCGQ9kFgJmD2QWBAIBDw9kFgIfAQUhaW5zdGl0dXRpb25BZGRyZXNzVGV4dEJveF90ZXh0Qm94ZAIDDw9kFgIfAgUDb2ZmZAIbD2QWAmYPZBYEAgEPD2QWAh8BBR5pbnN0aXR1dGlvbkNpdHlUZXh0Qm94X3RleHRCb3hkAgMPD2QWAh8CBQNvZmZkAh0PZBYCZg9kFgJmD2QWBAIBDw9kFgIfAQUhaW5zdGl0dXRpb25TdGF0ZURyb3BEb3duTGlzdF9saXN0ZAIDDxAPZBYCHwIFA29mZmRkZAIfD2QWAmYPZBYEAgEPD2QWAh8BBSFpbnN0aXR1dGlvblppcENvZGVUZXh0Qm94X3RleHRCb3hkAgMPD2QWAh8CBQNvZmZkAiEPZBYCZg9kFgQCAQ8PZBYCHwEFImluc3RpdHV0aW9uWmlwUGx1czRUZXh0Qm94X3RleHRCb3hkAgMPD2QWAh8CBQNvZmZkAisPZBYCZg9kFgQCAQ8PZBYCHwEFG2FjY291bnRQaG9uZVRleHRCb3hfdGV4dEJveGQCAw8PZBYCHwIFA29mZmQCBQ9kFgJmDw8WAh8AaGRkAgYPDxYCHwBoZBYCAgEPZBYCZg8PFgIfAGhkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUeY3RsMDAkbWFpbiR1c2VEaWZmTmFtZUNoZWNrQm94BR9jdGwwMCRtYWluJGFncmVlVG9UZXJtc0NoZWNrQm94f4hLLR25BG1TJQYB1iEq6qoJZSpiqgxaFbrsqE80MqM=" />
+
+
+<script src="Controls/JS/AdomMaintTable.js?v=13101401" type="text/javascript"></script>
+<script src="Controls/JS/adomLogin.js?v=13101401" type="text/javascript"></script>
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+            <div id="purchasePanel">
+                <div id="checkoutDetailsPanel">
+                    <div id="checkoutTotalPanel" class="formPanel">
+                        <div id="checkoutDesc"></div>
+                        <div id="checkoutAmountPanel">
+                            <span id="checkoutAmount"></span>
+                            <span id="checkoutAmountDesc"></span>
+                        </div>
+                        <div id="discountedCheckoutDesc"></div>
+                        <div id="discountedCheckoutAmountPanel">
+                            <span id="discountedCheckoutAmount"></span>
+                            <span id="discountedCheckoutAmountDesc"></span>
+                        </div>
+                        <div id="checkoutMonthlyAmountAfterDiscountDesc"></div>
+                        <input type="hidden" name="ctl00$main$checkoutAmountHidden" id="checkoutAmountHidden" />
+                    </div>
+                    <div id="couponCodePanel">
+                        <div id="couponCodeTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="couponCodeTextBox_textBox" id="label" slideTarget="couponCodeTextBox_textBox">Coupon Code</label>
+    <input name="ctl00$main$couponCodeTextBox$couponCodeTextBox_textBox" type="text" id="couponCodeTextBox_textBox" class="rounded" autocomplete="off" />
+    <span id="couponCodeTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                        <a id="applyCouponButton" class="button" onclick="return buzzowCart.applyCouponCode();" href="#">Apply</a>
+                    </div>
+                </div>
+                <div class="color orange">
+	                <div class="bar">Total</div>
+	                <div class="triangle1">&nbsp;</div>
+	                <div class="triangle2">&nbsp;</div>	
+                </div>
+                <div id="cardInfoPanel" class="formPanel">
+                    <div id="myInfoTitle" class="formTitle">My Information</div>
+                    <table id="myInfoTable" class="slidingLabelsTable formTable">
+                        <tr>
+                            <td>
+                                <div id="firstNameTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="firstNameTextBox_textBox" id="label" slideTarget="firstNameTextBox_textBox">First Name</label>
+    <input name="ctl00$main$firstNameTextBox$firstNameTextBox_textBox" type="text" maxlength="75" id="firstNameTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="firstNameTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                            <td class="fieldSeparationCell"></td>
+                            <td>
+                                <div id="lastNameTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="lastNameTextBox_textBox" id="label" slideTarget="lastNameTextBox_textBox">Last Name</label>
+    <input name="ctl00$main$lastNameTextBox$lastNameTextBox_textBox" type="text" maxlength="75" id="lastNameTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="lastNameTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                            <td class="fieldSeparationCell"></td>
+                            <td colspan="3">
+                                <div id="phoneTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="phoneTextBox_textBox" id="label" slideTarget="phoneTextBox_textBox">Phone #</label>
+    <input name="ctl00$main$phoneTextBox$phoneTextBox_textBox" type="text" id="phoneTextBox_textBox" title="Format: ###-###-#### This field is optional.  However, we perfer to contact you via phone if possible. We will not share or abuse your phone number in any way." class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" valUsPhone="t" reformatPhone="t" autocomplete="off" />
+    <span id="phoneTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <div id="emailTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="emailTextBox_textBox" id="label" slideTarget="emailTextBox_textBox">Email</label>
+    <input name="ctl00$main$emailTextBox$emailTextBox_textBox" type="text" maxlength="75" id="emailTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="emailTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="cardInfoTitle" class="formTitle">Card Information<div class="cards">&nbsp;</div></div>
+                    <table id="cardInfoTable" class="slidingLabelsTable formTable">
+                        <tr>
+                            <td>
+                                <div id="cardFirstNameTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="cardFirstNameTextBox_textBox" id="label" slideTarget="cardFirstNameTextBox_textBox">Card First Name</label>
+    <input name="ctl00$main$cardFirstNameTextBox$cardFirstNameTextBox_textBox" type="text" id="cardFirstNameTextBox_textBox" class="rounded adomVal" req="f" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="cardFirstNameTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                            <td class="fieldSeparationCell"></td>
+                            <td>
+                                <div id="cardLastNameTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="cardLastNameTextBox_textBox" id="label" slideTarget="cardLastNameTextBox_textBox">Card Last Name</label>
+    <input name="ctl00$main$cardLastNameTextBox$cardLastNameTextBox_textBox" type="text" id="cardLastNameTextBox_textBox" class="rounded adomVal" req="f" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="cardLastNameTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                            <td colspan="4" id="useDiffNameCell">
+                                <input id="useDiffNameCheckBox" type="checkbox" name="ctl00$main$useDiffNameCheckBox" /><label for="useDiffNameCheckBox">use different name</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div id="cardNumberTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="cardNumberTextBox_textBox" id="label" slideTarget="cardNumberTextBox_textBox">Card Number</label>
+    <input name="ctl00$main$cardNumberTextBox$cardNumberTextBox_textBox" type="text" maxlength="75" id="cardNumberTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="cardNumberTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                            <td>
+                                <div id="cvv2TextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="cvv2TextBox_textBox" id="label" slideTarget="cvv2TextBox_textBox">CVV2 Code</label>
+    <input name="ctl00$main$cvv2TextBox$cvv2TextBox_textBox" type="text" maxlength="75" id="cvv2TextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="cvv2TextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="cardExpiresMonthDropDownList_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="cardExpiresMonthDropDownList_list" id="label" slideTarget="cardExpiresMonthDropDownList_list">Expiration Month</label>
+    <select name="ctl00$main$cardExpiresMonthDropDownList$cardExpiresMonthDropDownList_list" id="cardExpiresMonthDropDownList_list" class="rounded roundedDrop adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off">
+		<option value=""></option>
+		<option value="1">January</option>
+		<option value="2">February</option>
+		<option value="3">March</option>
+		<option value="4">April</option>
+		<option value="5">May</option>
+		<option value="6">June</option>
+		<option value="7">July</option>
+		<option value="8">August</option>
+		<option value="9">September</option>
+		<option value="10">October</option>
+		<option value="11">November</option>
+		<option value="12">December</option>
+
+	</select>
+    <span id="cardExpiresMonthDropDownList_listIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                            <td class="fieldSeparationCell"></td>
+                            <td>
+                                <div id="cardExpirationYearDropDownList_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="cardExpirationYearDropDownList_list" id="label" slideTarget="cardExpirationYearDropDownList_list">Expiration Year</label>
+    <select name="ctl00$main$cardExpirationYearDropDownList$cardExpirationYearDropDownList_list" id="cardExpirationYearDropDownList_list" class="rounded roundedDrop adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off">
+		<option value=""></option>
+		<option value="2013">2013</option>
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+		<option value="2018">2018</option>
+		<option value="2019">2019</option>
+		<option value="2020">2020</option>
+		<option value="2021">2021</option>
+		<option value="2022">2022</option>
+
+	</select>
+    <span id="cardExpirationYearDropDownList_listIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <div id="addressLine1TextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="addressLine1TextBox_textBox" id="label" slideTarget="addressLine1TextBox_textBox">Address Line 1</label>
+    <input name="ctl00$main$addressLine1TextBox$addressLine1TextBox_textBox" type="text" maxlength="75" id="addressLine1TextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="addressLine1TextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <div id="addressLine2TextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="addressLine2TextBox_textBox" id="label" slideTarget="addressLine2TextBox_textBox">Address Line 2</label>
+    <input name="ctl00$main$addressLine2TextBox$addressLine2TextBox_textBox" type="text" id="addressLine2TextBox_textBox" class="rounded adomVal" req="f" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="addressLine2TextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="cityTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="cityTextBox_textBox" id="label" slideTarget="cityTextBox_textBox">City</label>
+    <input name="ctl00$main$cityTextBox$cityTextBox_textBox" type="text" maxlength="75" id="cityTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="cityTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                            <td class="fieldSeparationCell"></td>
+                            <td>
+                                <div id="stateDropDownList_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="stateDropDownList_list" id="label" slideTarget="stateDropDownList_list">State</label>
+    <select name="ctl00$main$StateDropDownListControl1$stateDropDownList$stateDropDownList_list" id="stateDropDownList_list" class="rounded roundedDrop adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off">
+		<option value=""></option>
+		<option value="AL">Alabama</option>
+		<option value="AK">Alaska</option>
+		<option value="AZ">Arizona</option>
+		<option value="AR">Arkansas</option>
+		<option value="CA">California</option>
+		<option value="CO">Colorado</option>
+		<option value="CT">Connecticut</option>
+		<option value="DE">Delaware</option>
+		<option value="DC">Dist. of Columbia</option>
+		<option value="FL">Florida</option>
+		<option value="GA">Georgia</option>
+		<option value="HI">Hawaii</option>
+		<option value="ID">Idaho</option>
+		<option value="IL">Illinois</option>
+		<option value="IN">Indiana</option>
+		<option value="IA">Iowa</option>
+		<option value="KS">Kansas</option>
+		<option value="KY">Kentucky</option>
+		<option value="LA">Louisiana</option>
+		<option value="ME">Maine</option>
+		<option value="MD">Maryland</option>
+		<option value="MA">Massachusetts</option>
+		<option value="MI">Michigan</option>
+		<option value="MN">Minnesota</option>
+		<option value="MS">Mississippi</option>
+		<option value="MO">Missouri</option>
+		<option value="MT">Montana</option>
+		<option value="NE">Nebraska</option>
+		<option value="NV">Nevada</option>
+		<option value="NH">New Hampshire</option>
+		<option value="NJ">New Jersey</option>
+		<option value="NM">New Mexico</option>
+		<option value="NY">New York</option>
+		<option value="NC">North Carolina</option>
+		<option value="ND">North Dakota</option>
+		<option value="OH">Ohio</option>
+		<option value="OK">Oklahoma</option>
+		<option value="OR">Oregon</option>
+		<option value="PA">Pennsylvania</option>
+		<option value="RI">Rhode Island</option>
+		<option value="SC">South Carolina</option>
+		<option value="SD">South Dakota</option>
+		<option value="TN">Tennessee</option>
+		<option value="TX">Texas</option>
+		<option value="UT">Utah</option>
+		<option value="VT">Vermont</option>
+		<option value="VA">Virginia</option>
+		<option value="WA">Washington</option>
+		<option value="WV">West Virginia</option>
+		<option value="WI">Wisconsin</option>
+		<option value="WY">Wyoming</option>
+
+	</select>
+    <span id="stateDropDownList_listIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+
+                            </td>
+                            <td class="fieldSeparationCell"></td>
+                            <td>
+                                <div id="zipCodeTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="zipCodeTextBox_textBox" id="label" slideTarget="zipCodeTextBox_textBox">ZipCode</label>
+    <input name="ctl00$main$zipCodeTextBox$zipCodeTextBox_textBox" type="text" maxlength="75" id="zipCodeTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="zipCodeTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                            <td>&nbsp;-&nbsp;</td>
+                            <td>
+                                <div id="zipPlus4TextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="zipPlus4TextBox_textBox" id="label" slideTarget="zipPlus4TextBox_textBox">Plus4</label>
+    <input name="ctl00$main$zipPlus4TextBox$zipPlus4TextBox_textBox" type="text" id="zipPlus4TextBox_textBox" class="rounded adomVal" req="f" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="zipPlus4TextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <div id="agreeToTermsPanel">
+                                    <span><span req="t"><input id="agreeToTermsCheckBox" type="checkbox" name="ctl00$main$agreeToTermsCheckBox" /></span></span>
+                                    <span id="agreeToTermsLabelPanel"><label id="agreeToTermsLabel" for="agreeToTermsCheckBox">Check here to indicate that you have read and accept our 
+                                        <a href="/privacy-policy-modal" rel="#overlay">privacy policy</a>, <a href="/terms-of-use-modal" rel="#overlay">terms of use</a>, and that you agree to 
+                                        receive SMS messages relayed by Buzzow&trade; at the phone number provided on your account.</label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <a id="authPurchaseLinkButton" class="button" onclick="return buzzowCart.authPurchase();" href="#">Purchase</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>    
+            <div id="cardApprovedPanel">
+                <div id="checkoutSuccess">
+                    <div id="checkoutSuccessIcon">
+                        <i class="icon-ok-circle icon-5x"></i>
+                    </div>
+                    <div id="ccApproved">
+                        Congratulations your credit card has been approved!
+                        <div id="orderNumberPanel">Your order number is: <span></span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="nonRegistrationThankYouPanel">
+                Non registration thank you                
+            </div>
+            <div id="inmateDetailsPanel">
+                
+
+<div id="inmateDetailPanel">    
+    <div id="inmateInfoPanel" class="formPanel">    
+        <div id="supporterInfoTitle" class="formTitle">Supporter Details</div>
+        <table id="supporterInfoTable" class="slidingLabelsTable formTable">
+            <tr>
+                <td>
+                    <div id="supporterTimZoneDropDownList_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="supporterTimZoneDropDownList_list" id="label" slideTarget="supporterTimZoneDropDownList_list">Time Zone</label>
+    <select name="ctl00$main$InmateDetailControl1$supporterTimZoneDropDownList$supporterTimZoneDropDownList_list" id="supporterTimZoneDropDownList_list" class="rounded roundedDrop adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off">
+		<option value=""></option>
+		<option value="C4E0BD9F-4718-4B10-B5F1-29021672AE6E">Eastern</option>
+		<option value="3DE255EF-015E-45AE-9AAE-2D88F48614CC">Central</option>
+		<option value="F33C7260-104A-4742-AD2B-FDDAD209C26B">Mountain</option>
+		<option value="B7BBD2E8-5B56-4E84-B9F7-24249B408959">Arizona</option>
+		<option value="F44C22D1-28B4-4CA8-8D40-678C17EC60DA">Pacific</option>
+		<option value="DF4FF922-6435-4C7D-849E-779570CA7ADE">Alaska</option>
+		<option value="7C9C7956-33A2-4899-9909-A78FD3DABEF5">Hawaii</option>
+
+	</select>
+    <span id="supporterTimZoneDropDownList_listIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td>
+                    <div id="supporterPinTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="supporterPinTextBox_textBox" id="label" slideTarget="supporterPinTextBox_textBox">PIN</label>
+    <input name="ctl00$main$InmateDetailControl1$supporterPinTextBox$supporterPinTextBox_textBox" type="text" maxlength="4" id="supporterPinTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="4" autocomplete="off" />
+    <span id="supporterPinTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+            </tr>
+        </table>
+
+        <div id="inmateInfoTitle" class="formTitle">Inmate Details</div>
+        <table id="inmateInfoTable" class="slidingLabelsTable formTable">
+            <tr>
+                <td>
+                    <div id="inmateFirstNameTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="inmateFirstNameTextBox_textBox" id="label" slideTarget="inmateFirstNameTextBox_textBox">First Name</label>
+    <input name="ctl00$main$InmateDetailControl1$inmateFirstNameTextBox$inmateFirstNameTextBox_textBox" type="text" maxlength="75" id="inmateFirstNameTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="2" autocomplete="off" />
+    <span id="inmateFirstNameTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td>
+                    <div id="inmateLastNameTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="inmateLastNameTextBox_textBox" id="label" slideTarget="inmateLastNameTextBox_textBox">Last Name</label>
+    <input name="ctl00$main$InmateDetailControl1$inmateLastNameTextBox$inmateLastNameTextBox_textBox" type="text" id="inmateLastNameTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="inmateLastNameTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td>
+                    <div id="inmateNumberTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="inmateNumberTextBox_textBox" id="label" slideTarget="inmateNumberTextBox_textBox">Inmate Number</label>
+    <input name="ctl00$main$InmateDetailControl1$inmateNumberTextBox$inmateNumberTextBox_textBox" type="text" id="inmateNumberTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="inmateNumberTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="inmateTimZoneDropDownList_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="inmateTimZoneDropDownList_list" id="label" slideTarget="inmateTimZoneDropDownList_list">Time Zone</label>
+    <select name="ctl00$main$InmateDetailControl1$inmateTimZoneDropDownList$inmateTimZoneDropDownList_list" id="inmateTimZoneDropDownList_list" class="rounded roundedDrop adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off">
+		<option value=""></option>
+		<option value="C4E0BD9F-4718-4B10-B5F1-29021672AE6E">Eastern</option>
+		<option value="3DE255EF-015E-45AE-9AAE-2D88F48614CC">Central</option>
+		<option value="F33C7260-104A-4742-AD2B-FDDAD209C26B">Mountain</option>
+		<option value="B7BBD2E8-5B56-4E84-B9F7-24249B408959">Arizona</option>
+		<option value="F44C22D1-28B4-4CA8-8D40-678C17EC60DA">Pacific</option>
+		<option value="DF4FF922-6435-4C7D-849E-779570CA7ADE">Alaska</option>
+		<option value="7C9C7956-33A2-4899-9909-A78FD3DABEF5">Hawaii</option>
+
+	</select>
+    <span id="inmateTimZoneDropDownList_listIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td>
+                    <div id="inmatePinTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="inmatePinTextBox_textBox" id="label" slideTarget="inmatePinTextBox_textBox">PIN</label>
+    <input name="ctl00$main$InmateDetailControl1$inmatePinTextBox$inmatePinTextBox_textBox" type="text" maxlength="4" id="inmatePinTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" minLen="4" autocomplete="off" />
+    <span id="inmatePinTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="institutionInfoPanel" class="formPanel">    
+        <div id="institutionInfoTitle" class="formTitle">Institution Information</div>
+        <table id="institutionInfoTable" class="slidingLabelsTable formTable">
+            <tr>
+                <td>
+                    <div id="institutionTypeDropDownList_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionTypeDropDownList_list" id="label" slideTarget="institutionTypeDropDownList_list">Type</label>
+    <select name="ctl00$main$InmateDetailControl1$institutionTypeDropDownList$institutionTypeDropDownList_list" id="institutionTypeDropDownList_list" class="rounded roundedDrop adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off">
+		<option value=""></option>
+		<option value="FEDERAL">Federal</option>
+		<option value="STATE">State</option>
+		<option value="COUNTY">County</option>
+
+	</select>
+    <span id="institutionTypeDropDownList_listIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>     
+                <td class="fieldSeparationCell"></td>
+                <td>
+                    <div id="institutionCountyTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionCountyTextBox_textBox" id="label" slideTarget="institutionCountyTextBox_textBox">County</label>
+    <input name="ctl00$main$InmateDetailControl1$institutionCountyTextBox$institutionCountyTextBox_textBox" type="text" id="institutionCountyTextBox_textBox" class="rounded adomVal" req="f" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="institutionCountyTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Does the institution block the caller id when your inmate calls?
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td colspan="3">
+                    <input type="radio" id="yesBlocksCallerId" value="YES" name="blocksCallerId"/><label for="yesBlocksCallerId">Yes</label>
+                    <input type="radio" id="noBlocksCallerId" value="NO" name="blocksCallerId"/><label for="noBlocksCallerId">No</label><br/>
+                    <input type="radio" id="dontKnowBlocksCallerId" value="DONT_KNOW" name="blocksCallerId" checked="checked"/><label for="dontKnowBlocksCallerId">I Don't Know</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    What number is displayed on your phone when your inmate calls?
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td colspan="3">
+                    <div id="institutionPhoneTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionPhoneTextBox_textBox" id="label" slideTarget="institutionPhoneTextBox_textBox">Caller Id Phone #</label>
+    <input name="ctl00$main$InmateDetailControl1$institutionPhoneTextBox$institutionPhoneTextBox_textBox" type="text" id="institutionPhoneTextBox_textBox" title="Format: ###-###-#### This field is optional." class="rounded adomVal" valUsPhone="t" onBlur="AdomJs.validateControl(this);" reformatPhone="t" autocomplete="off" />
+    <span id="institutionPhoneTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    What number do you press to accept the call from your inmate?
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td colspan="3">
+                    <div id="acceptToneDropDownList_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="acceptToneDropDownList_list" id="label" slideTarget="acceptToneDropDownList_list">Number</label>
+    <select name="ctl00$main$InmateDetailControl1$acceptToneDropDownList$acceptToneDropDownList_list" id="acceptToneDropDownList_list" class="rounded roundedDrop" autocomplete="off">
+		<option value=""></option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="0">0</option>
+		<option value="star">*</option>
+		<option value="pound">#</option>
+
+	</select>
+    <span id="acceptToneDropDownList_listIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="institutionNameTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionNameTextBox_textBox" id="label" slideTarget="institutionNameTextBox_textBox">Name</label>
+    <input name="ctl00$main$InmateDetailControl1$institutionNameTextBox$institutionNameTextBox_textBox" type="text" id="institutionNameTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="institutionNameTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td colspan="3">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="7">
+                    <div id="institutionAddressTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionAddressTextBox_textBox" id="label" slideTarget="institutionAddressTextBox_textBox">Address or P.O. Box</label>
+    <input name="ctl00$main$InmateDetailControl1$institutionAddressTextBox$institutionAddressTextBox_textBox" type="text" id="institutionAddressTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="institutionAddressTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="institutionCityTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionCityTextBox_textBox" id="label" slideTarget="institutionCityTextBox_textBox">City</label>
+    <input name="ctl00$main$InmateDetailControl1$institutionCityTextBox$institutionCityTextBox_textBox" type="text" id="institutionCityTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="institutionCityTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td>
+                    <div id="institutionStateDropDownList_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionStateDropDownList_list" id="label" slideTarget="institutionStateDropDownList_list">State</label>
+    <select name="ctl00$main$InmateDetailControl1$institutionStateDropDownList$institutionStateDropDownList$institutionStateDropDownList_list" id="institutionStateDropDownList_list" class="rounded roundedDrop adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off">
+		<option value=""></option>
+		<option value="AL">Alabama</option>
+		<option value="AK">Alaska</option>
+		<option value="AZ">Arizona</option>
+		<option value="AR">Arkansas</option>
+		<option value="CA">California</option>
+		<option value="CO">Colorado</option>
+		<option value="CT">Connecticut</option>
+		<option value="DE">Delaware</option>
+		<option value="DC">Dist. of Columbia</option>
+		<option value="FL">Florida</option>
+		<option value="GA">Georgia</option>
+		<option value="HI">Hawaii</option>
+		<option value="ID">Idaho</option>
+		<option value="IL">Illinois</option>
+		<option value="IN">Indiana</option>
+		<option value="IA">Iowa</option>
+		<option value="KS">Kansas</option>
+		<option value="KY">Kentucky</option>
+		<option value="LA">Louisiana</option>
+		<option value="ME">Maine</option>
+		<option value="MD">Maryland</option>
+		<option value="MA">Massachusetts</option>
+		<option value="MI">Michigan</option>
+		<option value="MN">Minnesota</option>
+		<option value="MS">Mississippi</option>
+		<option value="MO">Missouri</option>
+		<option value="MT">Montana</option>
+		<option value="NE">Nebraska</option>
+		<option value="NV">Nevada</option>
+		<option value="NH">New Hampshire</option>
+		<option value="NJ">New Jersey</option>
+		<option value="NM">New Mexico</option>
+		<option value="NY">New York</option>
+		<option value="NC">North Carolina</option>
+		<option value="ND">North Dakota</option>
+		<option value="OH">Ohio</option>
+		<option value="OK">Oklahoma</option>
+		<option value="OR">Oregon</option>
+		<option value="PA">Pennsylvania</option>
+		<option value="RI">Rhode Island</option>
+		<option value="SC">South Carolina</option>
+		<option value="SD">South Dakota</option>
+		<option value="TN">Tennessee</option>
+		<option value="TX">Texas</option>
+		<option value="UT">Utah</option>
+		<option value="VT">Vermont</option>
+		<option value="VA">Virginia</option>
+		<option value="WA">Washington</option>
+		<option value="WV">West Virginia</option>
+		<option value="WI">Wisconsin</option>
+		<option value="WY">Wyoming</option>
+
+	</select>
+    <span id="institutionStateDropDownList_listIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+
+                </td>
+                <td class="fieldSeparationCell"></td>
+                <td>
+                    <div id="institutionZipCodeTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionZipCodeTextBox_textBox" id="label" slideTarget="institutionZipCodeTextBox_textBox">ZipCode</label>
+    <input name="ctl00$main$InmateDetailControl1$institutionZipCodeTextBox$institutionZipCodeTextBox_textBox" type="text" id="institutionZipCodeTextBox_textBox" class="rounded adomVal" req="t" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="institutionZipCodeTextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+                <td>&nbsp;-&nbsp;</td>
+                <td>
+                    <div id="institutionZipPlus4TextBox_panel" class="slideLabel" style="text-align:left;">
+	
+    <label for="institutionZipPlus4TextBox_textBox" id="label" slideTarget="institutionZipPlus4TextBox_textBox">Plus4</label>
+    <input name="ctl00$main$InmateDetailControl1$institutionZipPlus4TextBox$institutionZipPlus4TextBox_textBox" type="text" id="institutionZipPlus4TextBox_textBox" class="rounded adomVal" req="f" onBlur="AdomJs.validateControl(this);" autocomplete="off" />
+    <span id="institutionZipPlus4TextBox_textBoxIcon" class="adomValIcon"></span>
+
+</div>
+
+    
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+                <a id="completeSignupLinkButton" class="button" onclick="return buzzowCart.completeSignup();" href="#">Complete</a>
+            </div>
+            <div id="nextStepsPanel">
+                Thank you we have the information we need to get you started
+                <div id="nextStepsTitle" class="formTitle">Next Steps</div>
+                <ul>
+                    <li>We will now send your inmate a Buzzow membership package with 2 forms they need to fill out</li>
+                    <li>Once the inmate receives the form, they’ll complete the forms, and then send the signed forms back to Buzzow!</li>
+                    <li>Buzzow will then verify the account by validating  the information and contacts submitted to us by the inmate. During the validation process you will receive a call from the Buzzow team to verify you as a contact. The number that will appear on your caller Id is: 855-708-2201</li>
+                    <li>Once the inmate’s account has been verified, we will mail the inmate back a welcome letter so they know their account is all set to begin using the service.</li>
+                    <li>At this point we have only acquired authorization to charge you card. We like to allow time for the proper forms to be mailed to your inmate and returned. We will not actually charge your card for 10 days (9/23/2013). We will continue to charge your card on the 23rd of each month until your account is cancelled.</li>
+                </ul>
+            </div>
+
+            <ul class="formErrorPanel"></ul>
+            <div class="messageModal" id="findAccountModal">
+                <div class="corner" id="findAccountForm">
+                    <i class="icon-phone icon-3x"></i>
+                    <h2>
+                        Please provide the<br />
+                        Buzzow&trade; phone number<br />
+                        where messages will be added.
+                    </h2>
+                    <p>
+                        <div id="accountPhoneTextBox_panel" class="slideLabel" style="text-align:left;">
+	
+                            <label for="accountPhoneTextBox_textBox" id="label" slideTarget="accountPhoneTextBox_textBox">Account Phone #</label>
+                            <input name="ctl00$main$accountPhoneTextBox$accountPhoneTextBox_textBox" type="text" id="accountPhoneTextBox_textBox" class="rounded adomVal" valUsPhone="t" onBlur="AdomJs.validateControl(this);" reformatPhone="t" req="t" autocomplete="off" />
+                            <span id="accountPhoneTextBox_textBoxIcon" class="adomValIcon"></span>
+                            <a class="go" href="#"><i class="icon-chevron-sign-right icon-2x"></i></a>
+                        </div>
+
+    
+                    </p>
+                </div>
+            </div>
+            <div id="overlay">
+                <div class="corner" id="externalContentContainer">
+                    <div class="contentWrap"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="footer-light-gray-band">
+    </div>
+    <div id="footer-dark-gray-band">
+    </div>
+    <div id="footer-black-band">
+	    <div class="center">
+		    <div class="left">
+			    Copyright 2013 Buzzow&trade; | Voice &amp; Text Messaging for Inmates | All Rights Reserved 
+		    </div>
+	    </div>
+    </div>
+
+    </div>
+    
+     
+    <div class="messageModal" id="defaultMessageModal">
+        <div id="messageModaLoading"></div>
+        <div id="messageModalMessagePanel" class="modalPanel">
+            <i class="icon-3x"></i>
+            <div id="defaultMessageModalTitle"></div>
+            <div id="defaultMessageModalMessage"></div>
+        
+            <div class="linkButton">
+                <a id="messageModalOkButton" class="button" onclick="$('#defaultMessageModal').overlay().close(); return false;" href="#">Ok</a>
+            </div>
+        </div>
+    </div>
+	<div id="cartDetails" class="messageModal modalPanel">
+		<div class="content_wrap">
+		</div>
+	</div>
+    
+
+</body>
+</html>
