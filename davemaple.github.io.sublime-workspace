@@ -11,6 +11,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/dmaple/Documents/cmg/moneymutualbusiness.com/seo-requirements.txt",
+			"settings":
+			{
+				"buffer_size": 3516,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "http://imoneymutual.com/",
+			"settings":
+			{
+				"buffer_size": 24,
+				"line_ending": "Unix",
+				"name": "http://imoneymutual.com/"
+			}
+		},
+		{
+			"contents": "CDuso@tssmasterd.com",
+			"settings":
+			{
+				"buffer_size": 20,
+				"line_ending": "Unix",
+				"name": "CDuso@tssmasterd.com"
+			}
+		},
+		{
+			"contents": "noindex interior pages\n",
+			"settings":
+			{
+				"buffer_size": 23,
+				"line_ending": "Unix",
+				"name": "noindex interior pages"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -47,6 +82,10 @@
 	},
 	"file_history":
 	[
+		"/Users/dmaple/Documents/davemaple.github.io/www.buzzow.com/terms-of-service.html",
+		"/Users/dmaple/Documents/davemaple.github.io/www.buzzow.com/thank-you-messages.html",
+		"/Users/dmaple/Documents/davemaple.github.io/www.buzzow.com/thank-you.html",
+		"/Users/dmaple/Documents/davemaple.github.io/davemaple.github.io.sublime-project",
 		"/Users/dmaple/Documents/workspace/ajmoss.com/app/assets/stylesheets/_form-styles.less",
 		"/etc/hosts",
 		"/Users/dmaple/Documents/workspace/ajmoss.com/app/views/checkout.scala.html",
@@ -131,8 +170,117 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/dmaple/Documents/cmg/moneymutualbusiness.com/seo-requirements.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								3516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"auto_name": "http://imoneymutual.com/",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								20
+							]
+						],
+						"settings":
+						{
+							"auto_name": "CDuso@tssmasterd.com",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"auto_name": "noindex interior pages",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -240,7 +388,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 215.0,
+	"side_bar_width": 400.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
