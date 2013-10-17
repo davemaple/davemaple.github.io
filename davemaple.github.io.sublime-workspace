@@ -45,6 +45,14 @@
 				"line_ending": "Unix",
 				"name": "noindex interior pages"
 			}
+		},
+		{
+			"file": "www.buzzow.com/how-it-works.html",
+			"settings":
+			{
+				"buffer_size": 19658,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -133,6 +141,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"buzzow",
+			"benefits",
+			"monitoring",
 			"#{resource['img:cards.png']}",
 			"amex",
 			"cardType",
@@ -170,7 +181,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -192,7 +203,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -277,6 +289,33 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "www.buzzow.com/how-it-works.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16591,
+								16591
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 10289.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
