@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate Dynamic Headlines for MarketMeSuite</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+		/* reset */
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+		
+		body {
+			font-family: Helvetica, Arial, sans-serif;
+		}
+
+		/* form */
+		table {
+			width: 600px;
+			margin: 20px auto;
+		}
+
+		td {
+			padding: 5px;
+		}
+
+		input {
+			width: 400px;
+			border-radius: 7px;
+			border: 1px solid #CCC;
+			padding: 5px;
+			background: #f9eefb;
+		}
+
+		textarea {
+			width: 500px;
+			background: #f9eefb;
+			height: 250px;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>
+		var encoder = {
+			encode: function(val) {
+				return encodeURIComponent(window.btoa($.trim(val)));
+			}
+		};
+
+		$(document).ready(function() {
+			$('#generate').on('click', function() {
+				var url = $.trim($('#url').val());
+				var h1 = encoder.encode($('#h1').val());
+				var h2 = encoder.encode($('#h2').val());
+				url += ('?h1=' + h1 + '&h2=' + h2);
+				$('#generatedUrl').val(url);
+				$('#link a').attr('href', url).text(url);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td>URL:</td>
+			<td><input type="text" id="url" value="http://marketmesuite.com/l/3/" /></td>
+		</tr>
+		<tr>
+			<td>H1:</td>
+			<td><input type="text" id="h1" value="" /></td>
+		</tr>
+		<tr>
+			<td>H2:</td>
+			<td><input type="text" id="h2" value="" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<button id="generate">Generate URL</button>
+				<div id="link"><a target="_blank"/></div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<textarea id="generatedUrl">
+				</textarea>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+
+</html>
+
