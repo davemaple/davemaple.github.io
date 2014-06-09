@@ -210,6 +210,9 @@ $.fn.extend({
 					c,
 					next;
 
+					$('#pos-begin').val(pos.begin);
+					$('#pos-end').val(pos.end);
+
                     if (k == 0) {
                         // unable to detect key pressed. Grab it from pos and adjust
                         // this is a failsafe for mobile chrome
@@ -236,6 +239,7 @@ $.fn.extend({
 					}
 
 					p = seekNext(pos.begin - 1);
+					$('#position').val(p);
 					if (p < len) {
 						c = String.fromCharCode(k);
 						if (tests[p].test(c)) {
