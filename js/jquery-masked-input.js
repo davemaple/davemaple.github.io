@@ -50,6 +50,7 @@ $.fn.extend({
 			});
 		} else {
 			if (this[0].setSelectionRange) {
+				alert('hi');
 				begin = this[0].selectionStart;
 				end = this[0].selectionEnd;
 			} else if (document.selection && document.selection.createRange) {
@@ -235,10 +236,7 @@ $.fn.extend({
 						shiftL(pos.begin, pos.end-1);
 					}
 
-					$('#debug').empty();
-					$('#debug').append('pos.begin: ' + pos.begin + '<br />');
 					p = seekNext(pos.begin - 1);
-					$('#debug').append('p: ' + p + '<br />');
 
 					if (p < len) {
 						c = String.fromCharCode(k);
