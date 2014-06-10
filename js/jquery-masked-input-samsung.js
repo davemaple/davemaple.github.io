@@ -12,6 +12,7 @@ var pasteEventName = getPasteEvent() + ".mask",
 	iPhone = /iphone/i.test(ua),
 	chrome = /chrome/i.test(ua),
 	android=/android/i.test(ua),
+	samsungKitKat=/android 4/i.test(ua),
 	caretTimeoutId;
 
 $.mask = {
@@ -50,8 +51,17 @@ $.fn.extend({
 			});
 		} else {
 			if (this[0].setSelectionRange) {
+				$('#debug').empty();
 				begin = this[0].selectionStart;
 				end = this[0].selectionEnd;
+
+				// if (samsungKitKat) {
+				// 	begin -= 1;
+				// 	end -= 1;
+				// }
+
+				// $('#debug').append('selectionStart: ' + begin + '<br />');
+				// $('#debug').append('selectionEnd: ' + end + '<br />');
 			} else if (document.selection && document.selection.createRange) {
 				range = document.selection.createRange();
 				begin = 0 - range.duplicate().moveStart('character', -100000);
