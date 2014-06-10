@@ -1,6 +1,6 @@
 (function($) {
 
-alert('version 4');
+alert('version 5');
 
 function getPasteEvent() {
     var el = document.createElement('input'),
@@ -59,6 +59,10 @@ $.fn.extend({
 				begin = 0 - range.duplicate().moveStart('character', -100000);
 				end = begin + range.text.length;
 			}
+
+			$('#range-begin').val(begin);
+			$('#range-end').val(end);
+
 			return { begin: begin, end: end };
 		}
 	},
