@@ -63,7 +63,7 @@ $.fn.extend({
 				}
 
 				$('#debug').append('selectionStart: ' + begin + '<br />');
-				$('#debug').append('selectionEnd: ' + e + '<br />');
+				$('#debug').append('selectionEnd: ' + end + '<br />');
 			} else if (document.selection && document.selection.createRange) {
 				range = document.selection.createRange();
 				begin = 0 - range.duplicate().moveStart('character', -100000);
