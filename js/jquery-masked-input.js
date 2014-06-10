@@ -114,7 +114,6 @@ $.fn.extend({
 				focusText = input.val();
 
 			function seekNext(pos) {
-				$('#debug').empty().append('<br />' + pos + '<br />');
 				while (++pos < len && !tests[pos]);
 				return pos;
 			}
@@ -153,6 +152,9 @@ $.fn.extend({
 					c,
 					j,
 					t;
+
+				$('#debug').empty();
+				$('#debug').append('Begin: ' + pos + '<br />');
 
 				for (i = pos, c = settings.placeholder; i < len; i++) {
 					if (tests[i]) {
