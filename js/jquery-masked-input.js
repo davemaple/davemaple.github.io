@@ -366,6 +366,7 @@ $.fn.extend({
 					}, 0);
 				});
                 if ((chrome && android) || kitkat) {
+                	alert('test');
                     input.on("keyup.mask", keypressEvent);
                 }
 				checkVal(); //Perform initial check for existing values
