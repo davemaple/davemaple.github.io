@@ -11,8 +11,6 @@
 
 	<script>
 	$(document).ready(function() {
-		$("section[data-article-page!='1']").hide();
-		$('[data-article-page-number]').text('1');
 
 		var maxPage = 1;
 
@@ -27,12 +25,40 @@
 		$('[data-article-max-page]').text(maxPage);
 
 
-		$('[data-article-page-link]').on('click', function() {
+		$('[data-article-page-link]').on('click', function(e) {
+			e.preventDefault();
 			var page = $(this).attr('data-article-page-link');
 			$('[data-article-page-number]').text(page);
 			$("section[data-article-page!='" + page + "']").hide();
 			$("section[data-article-page='" + page + "']").show();
+
+			if (page == 1) {
+				$('[data-article-page-link-previous]').hide();
+			} else {
+				$('[data-article-page-link-previous]').show();
+			}
+
+			if (page == parseInt($('[data-article-max-page]').text())) {
+				$('[data-article-page-link-next]').hide();
+			} else {
+				$('[data-article-page-link-next]').show();
+			}
 		});
+
+		$('[data-article-page-link-previous]').on('click', function(e) {
+			e.preventDefault();
+			var nextPage = parseInt($('[data-article-page-number]').text()) - 1;
+			$("[data-article-page-link='" + nextPage + "']").click();
+		});
+
+		$('[data-article-page-link-next]').on('click', function(e) {
+			e.preventDefault();
+			var nextPage = parseInt($('[data-article-page-number]').text()) + 1;
+			$("[data-article-page-link='" + nextPage + "']").click();
+		});
+
+		$("section[data-article-page!='1']").hide();
+		$("[data-article-page-link='1']").click();
 	});
 	</script>
 </head>
@@ -52,7 +78,7 @@
 	</article>
 
 	<div>
-		Page <span data-article-page-number>0</span> of <span data-article-max-page>0</span>.
+		<a href="#" data-article-page-link-previous>Previous</a> &nbsp;&nbsp;&nbsp; Page <span data-article-page-number>0</span> of <span data-article-max-page>0</span>. &nbsp;&nbsp;&nbsp; <a href="#" data-article-page-link-next>Next</a>
 	</div>
 
 	<nav>
