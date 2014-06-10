@@ -1,5 +1,7 @@
 (function($) {
 
+alert('version 3');
+
 function getPasteEvent() {
     var el = document.createElement('input'),
         name = 'onpaste';
