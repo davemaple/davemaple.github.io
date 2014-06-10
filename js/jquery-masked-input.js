@@ -365,11 +365,12 @@ $.fn.extend({
 							settings.completed.call(input);
 					}, 0);
 				});
-                if ((chrome && android) || kitkat) {
+                if (chrome && android) {
                 	alert('test');
                     input.on("keyup.mask", keypressEvent);
                 }
 				checkVal(); //Perform initial check for existing values
+				alert(kitkat);
 		});
 	}
 });
