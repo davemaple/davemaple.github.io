@@ -12,7 +12,7 @@ var pasteEventName = getPasteEvent() + ".mask",
 	iPhone = /iphone/i.test(ua),
 	chrome = /chrome/i.test(ua),
 	android=/android/i.test(ua),
-	samsungKitKat=/android 4.4/i.test(ua) && /samsung/i.test(ua),
+	samsungKitKat=/android 4.4/i.test(ua),
 	caretTimeoutId;
 
 $.mask = {
