@@ -1,7 +1,5 @@
 (function($) {
 
-alert('version 6');
-
 function getPasteEvent() {
     var el = document.createElement('input'),
         name = 'onpaste';
@@ -59,10 +57,6 @@ $.fn.extend({
 				begin = 0 - range.duplicate().moveStart('character', -100000);
 				end = begin + range.text.length;
 			}
-
-			$('#range-begin').val(begin);
-			$('#range-end').val(end);
-
 			return { begin: begin, end: end };
 		}
 	},
@@ -106,6 +100,10 @@ $.fn.extend({
 				tests.push(null);
 			}
 		});
+
+		for (var i=0; i<tests.length; i++) {
+			alert(tests[i]);
+		}
 
 		return this.trigger("unmask").each(function() {
 			var input = $(this),
@@ -216,9 +214,6 @@ $.fn.extend({
 					c,
 					next;
 
-					$('#pos-begin').val(pos.begin);
-					$('#pos-end').val(pos.end);
-
                     if (k == 0) {
                         // unable to detect key pressed. Grab it from pos and adjust
                         // this is a failsafe for mobile chrome
@@ -245,9 +240,9 @@ $.fn.extend({
 					}
 
 					p = seekNext(pos.begin - 1);
-					$('#position').val(p);
 					if (p < len) {
 						c = String.fromCharCode(k);
+
 						if (tests[p].test(c)) {
 							shiftR(p);
 
@@ -255,7 +250,16 @@ $.fn.extend({
 							writeBuffer();
 							next = seekNext(p);
 
-							input.caret(next);
+							if(android){
+								//Path for CSP Violation on FireFox OS 1.1
+								var proxy = function() {
+									$.proxy($.fn.caret,input,next)();
+								};
+
+								setTimeout(proxy,0);
+							}else{
+								input.caret(next);
+							}
 
 							if (settings.completed && next >= len) {
 								settings.completed.call(input);
