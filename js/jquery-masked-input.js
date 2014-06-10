@@ -251,16 +251,7 @@ $.fn.extend({
 							writeBuffer();
 							next = seekNext(p);
 
-							if(android){
-								//Path for CSP Violation on FireFox OS 1.1
-								var proxy = function() {
-									$.proxy($.fn.caret,input,next)();
-								};
-
-								setTimeout(proxy,0);
-							}else{
-								input.caret(next);
-							}
+							input.caret(next);
 
 							if (settings.completed && next >= len) {
 								settings.completed.call(input);
