@@ -236,14 +236,8 @@ $.fn.extend({
 					}
 
 					p = seekNext(pos.begin - 1);
-					$('#seek').val(p);
-
 					if (p < len) {
 						c = String.fromCharCode(k);
-						$('#character').val(c);
-						$('#test').val(tests[p] + " = " + tests[p].test(c));
-
-
 						if (tests[p].test(c)) {
 							shiftR(p);
 
@@ -257,7 +251,6 @@ $.fn.extend({
 									$.proxy($.fn.caret,input,next)();
 								};
 
-								e.preventDefault();
 								setTimeout(proxy,0);
 							}else{
 								input.caret(next);
@@ -281,7 +274,10 @@ $.fn.extend({
 				}
 			}
 
-			function writeBuffer() { input.val(buffer.join('')); }
+			function writeBuffer() { 
+				$('#debug').empty().append('<br />' + buffer + '<br />');
+				input.val(buffer.join('')); 
+			}
 
 			function checkVal(allow) {
 				//try to place characters where they belong
