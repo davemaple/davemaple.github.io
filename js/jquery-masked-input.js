@@ -210,6 +210,8 @@ $.fn.extend({
 					c,
 					next;
 
+					e.preventDefault();
+
                     if (k == 0) {
                         // unable to detect key pressed. Grab it from pos and adjust
                         // this is a failsafe for mobile chrome
