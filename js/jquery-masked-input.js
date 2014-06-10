@@ -240,7 +240,6 @@ $.fn.extend({
 					}
 
 					p = seekNext(pos.begin - 1);
-
 					if (p < len) {
 						c = String.fromCharCode(k);
 						if (tests[p].test(c)) {
@@ -279,10 +278,7 @@ $.fn.extend({
 				}
 			}
 
-			function writeBuffer() { 
-				//$('#debug').empty().append('<br />' + buffer + '<br />');
-				input.val(buffer.join('')); 
-			}
+			function writeBuffer() { input.val(buffer.join('')); }
 
 			function checkVal(allow) {
 				//try to place characters where they belong
