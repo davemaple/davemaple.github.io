@@ -238,7 +238,6 @@ $.fn.extend({
 					p = seekNext(pos.begin - 1);
 					if (p < len) {
 						c = String.fromCharCode(k);
-						alert(c);
 
 						if (tests[p].test(c)) {
 							shiftR(p);
