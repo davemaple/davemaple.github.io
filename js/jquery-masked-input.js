@@ -12,6 +12,7 @@ var pasteEventName = getPasteEvent() + ".mask",
 	iPhone = /iphone/i.test(ua),
 	chrome = /chrome/i.test(ua),
 	android=/android/i.test(ua),
+	samsungKitKat=/android 4.4/i.test(ua) && /samsung/i.test(ua),
 	caretTimeoutId;
 
 $.mask = {
@@ -50,6 +51,7 @@ $.fn.extend({
 			});
 		} else {
 			if (this[0].setSelectionRange) {
+				alert(samsungKitKat);
 				$('#debug').empty();
 				begin = this[0].selectionStart;
 				end = this[0].selectionEnd;
