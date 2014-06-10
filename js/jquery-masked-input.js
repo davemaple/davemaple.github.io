@@ -101,10 +101,6 @@ $.fn.extend({
 			}
 		});
 
-		for (var i=0; i<tests.length; i++) {
-			alert(tests[i]);
-		}
-
 		return this.trigger("unmask").each(function() {
 			var input = $(this),
 				buffer = $.map(
@@ -369,9 +365,9 @@ $.fn.extend({
 							settings.completed.call(input);
 					}, 0);
 				});
-                if (chrome && android) {
-                    input.on("keyup.mask", keypressEvent);
-                }
+                // if (chrome && android) {
+                //     input.on("keyup.mask", keypressEvent);
+                // }
 				checkVal(); //Perform initial check for existing values
 		});
 	}
