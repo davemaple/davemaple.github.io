@@ -214,6 +214,7 @@ $.fn.extend({
 					$('#pos-end').val(pos.end);
 
                     if (k == 0) {
+                    	alert('0');
                         // unable to detect key pressed. Grab it from pos and adjust
                         // this is a failsafe for mobile chrome
                         // which can't detect keypress events
