@@ -49,11 +49,26 @@ $.fn.extend({
 				}
 			});
 		} else {
+			if (this[0].setSelectionRange) {
+				$('#debug').empty();
+				begin = this[0].selectionStart;
+				end = this[0].selectionEnd;
 
+				if (begin > this.length) {
+					begin = 0;
+				}
+
+				if (end > this.length) {
+					end = 0;
+				}
+
+				$('#debug').append('selectionStart: ' + begin + '<br />');
+				$('#debug').append('selectionEnd: ' + e + '<br />');
+			} else if (document.selection && document.selection.createRange) {
 				range = document.selection.createRange();
 				begin = 0 - range.duplicate().moveStart('character', -100000);
 				end = begin + range.text.length;
-			
+			}
 			return { begin: begin, end: end };
 		}
 	},
