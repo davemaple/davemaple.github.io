@@ -115,6 +115,7 @@ $.fn.extend({
 
 			function seekNext(pos) {
 				while (++pos < len && !tests[pos]);
+				$('#debug').empty().append('<br />' + pos + '<br />');
 				return pos;
 			}
 
@@ -275,7 +276,7 @@ $.fn.extend({
 			}
 
 			function writeBuffer() { 
-				$('#debug').empty().append('<br />' + buffer + '<br />');
+				//$('#debug').empty().append('<br />' + buffer + '<br />');
 				input.val(buffer.join('')); 
 			}
 
