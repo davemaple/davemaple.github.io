@@ -12,6 +12,7 @@ var pasteEventName = getPasteEvent() + ".mask",
 	iPhone = /iphone/i.test(ua),
 	chrome = /chrome/i.test(ua),
 	android=/android/i.test(ua),
+	kitkat=/android 4/i.test(ua),
 	caretTimeoutId;
 
 $.mask = {
@@ -364,7 +365,7 @@ $.fn.extend({
 							settings.completed.call(input);
 					}, 0);
 				});
-                if (chrome && android) {
+                if ((chrome && android) || kitkat) {
                     input.on("keyup.mask", keypressEvent);
                 }
 				checkVal(); //Perform initial check for existing values
