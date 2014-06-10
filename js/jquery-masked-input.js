@@ -1,6 +1,6 @@
 (function($) {
 
-alert('version 3');
+alert('version 4');
 
 function getPasteEvent() {
     var el = document.createElement('input'),
@@ -361,9 +361,7 @@ $.fn.extend({
 							settings.completed.call(input);
 					}, 0);
 				});
-                if (chrome && android) {
-                    input.on("keyup.mask", keypressEvent);
-                }
+
 				checkVal(); //Perform initial check for existing values
 		});
 	}
