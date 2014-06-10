@@ -238,6 +238,7 @@ $.fn.extend({
 					p = seekNext(pos.begin - 1);
 					if (p < len) {
 						c = String.fromCharCode(k);
+						alert(c);
 
 						if (tests[p].test(c)) {
 							shiftR(p);
@@ -365,9 +366,9 @@ $.fn.extend({
 							settings.completed.call(input);
 					}, 0);
 				});
-                // if (chrome && android) {
-                //     input.on("keyup.mask", keypressEvent);
-                // }
+                if (chrome && android) {
+                    input.on("keyup.mask", keypressEvent);
+                }
 				checkVal(); //Perform initial check for existing values
 		});
 	}
