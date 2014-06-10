@@ -51,10 +51,14 @@ $.fn.extend({
 			});
 		} else {
 			if (this[0].setSelectionRange) {
-				alert(samsungKitKat);
 				$('#debug').empty();
 				begin = this[0].selectionStart;
 				end = this[0].selectionEnd;
+
+				if (samsungKitKat) {
+					begin -= 1;
+					end -= 1;
+				}
 
 				$('#debug').append('selectionStart: ' + begin + '<br />');
 				$('#debug').append('selectionEnd: ' + end + '<br />');
