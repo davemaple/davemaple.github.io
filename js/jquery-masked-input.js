@@ -153,9 +153,6 @@ $.fn.extend({
 					j,
 					t;
 
-				$('#debug').empty();
-				$('#debug').append('Begin: ' + pos + '<br />');
-
 				for (i = pos, c = settings.placeholder; i < len; i++) {
 					if (tests[i]) {
 						j = seekNext(i);
@@ -238,7 +235,11 @@ $.fn.extend({
 						shiftL(pos.begin, pos.end-1);
 					}
 
+					$('#debug').empty();
+					$('#debug').append('pos.begin: ' + pos.begin + '<br />');
 					p = seekNext(pos.begin - 1);
+					$('#debug').append('p: ' + p + '<br />');
+
 					if (p < len) {
 						c = String.fromCharCode(k);
 						if (tests[p].test(c)) {
