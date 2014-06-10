@@ -214,7 +214,6 @@ $.fn.extend({
 					$('#pos-end').val(pos.end);
 
                     if (k == 0) {
-                    	alert('0');
                         // unable to detect key pressed. Grab it from pos and adjust
                         // this is a failsafe for mobile chrome
                         // which can't detect keypress events
@@ -250,16 +249,7 @@ $.fn.extend({
 							writeBuffer();
 							next = seekNext(p);
 
-							if(android){
-								//Path for CSP Violation on FireFox OS 1.1
-								var proxy = function() {
-									$.proxy($.fn.caret,input,next)();
-								};
-
-								setTimeout(proxy,0);
-							}else{
-								input.caret(next);
-							}
+							input.caret(next);
 
 							if (settings.completed && next >= len) {
 								settings.completed.call(input);
