@@ -49,17 +49,11 @@ $.fn.extend({
 				}
 			});
 		} else {
-			if (this[0].setSelectionRange) {
-				$('#debug').empty();
-				begin = this[0].selectionStart;
-				end = this[0].selectionEnd;
-				$('#debug').append('selectionStart: ' + begin + '<br />');
-				$('#debug').append('selectionEnd: ' + end + '<br />');
-			} else if (document.selection && document.selection.createRange) {
+
 				range = document.selection.createRange();
 				begin = 0 - range.duplicate().moveStart('character', -100000);
 				end = begin + range.text.length;
-			}
+			
 			return { begin: begin, end: end };
 		}
 	},
