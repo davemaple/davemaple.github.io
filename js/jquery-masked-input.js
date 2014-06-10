@@ -54,14 +54,6 @@ $.fn.extend({
 				begin = this[0].selectionStart;
 				end = this[0].selectionEnd;
 
-				if (begin > this.length) {
-					begin = 0;
-				}
-
-				if (end > this.length) {
-					end = 0;
-				}
-
 				$('#debug').append('selectionStart: ' + begin + '<br />');
 				$('#debug').append('selectionEnd: ' + end + '<br />');
 			} else if (document.selection && document.selection.createRange) {
