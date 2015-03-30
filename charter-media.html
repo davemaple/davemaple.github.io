@@ -14,8 +14,15 @@
 		<script>
 			$(window).load(function() {
 				(function() {
+					// redefine document write
 					var oldDocumentWrite = window.document.write;
-					window.document.write = function(html) { $('body').append(html); };
+					window.document.write = (function(html) { 
+						try { 
+							$('body').append(html); 
+						} catch(ex) {} 
+					});
+					
+					// get script and then set document.write back to initial state
 					$.getScript('https://tag.brandcdn.com/autoscript/Money_Mutual_Prizm.js')
 						.done(function(script, textStatus) {	
 							window.document.write = oldDocumentWrite;
