@@ -14,14 +14,18 @@
 		<script>
 			$(window).load(function() {
 				(function() {
-					var oldDocumentWrite = window.document.write;
-					window.document.write = function(html) { $('body').append(html); };
-					$.getScript('https://tag.brandcdn.com/autoscript/Money_Mutual_Prizm.js')
-						.done(function(script, textStatus) {
+					$.ajax({
+						url : 'https://tag.brandcdn.com/autoscript/Money_Mutual_Prizm.js',
+						dataType : 'script',
+						success : function(script, status, xhr) {
+							var oldDocumentWrite = window.document.write;
+							window.document.write = function(html) {
+								$('body').append(html);
+							};
 							window.document.write = oldDocumentWrite;
-						});
-				})();
-			});
+							console.log(script);
+						}
+					});
 		</script>
 	</body>
 </html>
