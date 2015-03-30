@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charter Media Pixel Test</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 		
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/jquery-masked-input.js"></script>
+    </head>
+    <body>
+    
+		<!-- Charter Media -->
+		<script>
+			$(window).load(function() {
+				(function() {
+					var oldDocumentWrite = window.document.write;
+					window.document.write = function(html) { $('body').append(html); };
+					$.getScript('https://tag.brandcdn.com/autoscript/Money_Mutual_Prizm.js');
+					window.document.write = oldDocumentWrite;
+				})();
+			});
+		</script>
+	</body>
+</html>
