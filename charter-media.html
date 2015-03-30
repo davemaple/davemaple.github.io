@@ -10,22 +10,16 @@
     </head>
     <body>
     
-		<!-- Charter Media -->
+		<!-- Privacy policy at http://tag.brandcdn.com/privacy -->
 		<script>
 			$(window).load(function() {
 				(function() {
-					$.ajax({
-						url : 'https://tag.brandcdn.com/autoscript/Money_Mutual_Prizm.js',
-						dataType : 'script',
-						success : function(script, status, xhr) {
-							var oldDocumentWrite = window.document.write;
-							window.document.write = function(html) {
-								$('body').append(html);
-							};
+					var oldDocumentWrite = window.document.write;
+					window.document.write = function(html) { $('body').append(html); };
+					$.getScript('https://tag.brandcdn.com/autoscript/Money_Mutual_Prizm.js')
+						.done(function(script, textStatus) {	
 							window.document.write = oldDocumentWrite;
-							console.log(script);
-						}
-					});
+						});
 				})();
 			});
 		</script>
