@@ -1,0 +1,1990 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+@font-face {
+    font-family: 'carisma-light';
+    src: url('fonts/carisma-light.eot');
+    src: url('fonts/carisma-light.eot?#iefix') format('embedded-opentype'), url('fonts/carisma-light.woff') format('woff'), url('fonts/carisma-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+body {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/header_shooting_star.jpg') no-repeat top center #000;
+    font-family: Arial, Helvetica, Sans-Serif
+}
+
+h1, h2, h3 {
+    font-family: 'carisma-light'
+}
+
+strong {
+    font-weight: bold
+}
+
+em {
+    font-style: italic
+}
+
+.overlay {
+    z-index: 501;
+    display: none;
+    font-size: 11px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    background: #ccc url('http://theinnatbowmanshill.com/assets/1.0.41/images/transparent.gif')
+}
+
+.content_wrap {
+    border-radius: 10px;
+    background: #FFF;
+    -moz-border-radius: 10px
+}
+
+.popup .content_wrap {
+    padding: 10px;
+    width: 700px;
+    color: #333;
+    font-size: 13px;
+    line-height: 18px
+}
+
+.content_wrap img {
+    border-radius: 10px;
+    -moz-border-radius: 10px
+}
+
+.overlay .close {
+    background-image: url('http://theinnatbowmanshill.com/assets/1.0.41/images/close.png');
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px
+}
+
+h2.thumbnailTitle {
+    margin: 1em 0 0.5em 0
+}
+
+#breadcrumb {
+    margin-top: 25px
+}
+
+div#header {
+    position: relative;
+    margin: 0 auto;
+    width: 960px;
+    height: 170px
+}
+
+div#header div#aaa {
+    position: absolute;
+    top: 17px;
+    left: 36px;
+    width: 96px;
+    height: 88px;
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/aaa-blue.png') top left no-repeat;
+    z-index: 5
+}
+
+div#header div#aaa:hover {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/aaa.png') top left no-repeat
+}
+
+div#header div#music {
+    position: absolute;
+    top: 129px;
+    left: 780px;
+    width: 55px;
+    padding: 27px 3px 0px 3px;
+    z-index: 5;
+    font-family: Arial, Verdana, Sans-Serif;
+    color: #FFF;
+    font-size: 12px
+}
+
+div#header div#music a {
+    cursor: pointer
+}
+
+div#header div#music a.on {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/on_note2.png') top left no-repeat;
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    bottom: 13px;
+    bottom: -10px;
+    right: 10px;
+    opacity: 0.5
+}
+
+div#header div#music a.off {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/off_note2.png') top left no-repeat;
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    right: 25px;
+    opacity: 0.5
+}
+
+div#header div#music a.inactive {
+    color: #999;
+    opacity: 1.0
+}
+
+div#header div#hills {
+    position: relative;
+    z-index: 2;
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/header_hills.png') top left no-repeat;
+    width: 960px;
+    height: 170px
+}
+
+div#header div#hills a {
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    position: absolute;
+    font-family: 'carisma-light'
+}
+
+div#header div#hills a.home {
+    letter-spacing: 10px;
+    font-size: 22px;
+    top: 145px;
+    left: 23px;
+    color: #AAA
+}
+
+div#header div#hills a.phone {
+    letter-spacing: 2px;
+    font-size: 14px;
+    top: 151px;
+    left: 589px;
+    color: #c0e9ff
+}
+
+div#header div#hills div#headerSocials {
+    top: 147px;
+    left: 870px;
+    position: absolute
+}
+
+div#header div#hills div#headerSocials > div.fb_icon {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') 0 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    float: left
+}
+
+div#header div#hills div#headerSocials > div.fb_icon:hover {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') 0 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    float: left
+}
+
+div#header div#hills div#headerSocials > div.fb_icon a {
+    display: block;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: #6e8ea3 1px solid
+}
+
+div#header div#hills div#headerSocials > div.tw_icon {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') -24px 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    float: left
+}
+
+div#header div#hills div#headerSocials > div.tw_icon:hover {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') -24px 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    float: left
+}
+
+div#header div#hills div#headerSocials > div.tw_icon a {
+    display: block;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: #6e8ea3 1px solid
+}
+
+div#header div#hills div#headerSocials > div.yt_icon {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') -192px 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    float: left
+}
+
+div#header div#hills div#headerSocials > div.yt_icon:hover {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') -192px 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    float: left
+}
+
+div#header div#hills div#headerSocials > div.yt_icon a {
+    display: block;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: #6e8ea3 1px solid
+}
+
+div#header div#phoenix {
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    width: 730px;
+    text-align: center;
+    color: #c0e9ff;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
+}
+
+div#header div#phoenix span.headline {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px
+}
+
+div#header div#phoenix span.headline.newsflash {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+    font-size: 30px
+}
+
+div#header div#phoenix span.headline.newsflash.text-glow {
+    -webkit-stroke-color: #c0e9ff;
+    -webkit-fill-color: #c0e9ff;
+    text-shadow: 1px 0px 30px red
+}
+
+.text-glow {
+    -webkit-stroke-width: 5.3px;
+    -webkit-stroke-color: #c0e9ff;
+    -webkit-fill-color: #c0e9ff;
+    text-shadow: 1px 0px 15px #c0e9ff;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -o-transition: width 0.3s
+}
+
+div#header div#phoenix span.subtext {
+    font-size: 15px;
+    color: #FFF
+}
+
+div#header div#phoenix span.readmore {
+    font-size: 12px;
+    color: #FFF;
+    display: block;
+    position: absolute
+}
+
+div#header div#phoenix span.quotation {
+    display: block;
+    width: 575px;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 50px;
+    font-style: italic
+}
+
+div#header div#phoenix span.author {
+    display: block;
+    width: 575px;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 20px;
+    text-align: right;
+    margin-left: 50px;
+    font-style: italic
+}
+
+div#nav {
+    width: 100%;
+    height: 54px;
+    margin: 0 auto;
+    font-size: 11px;
+    font-family: Arial, Verdana, Sans-Serif;
+    position: relative;
+    z-index: 100
+}
+
+div#nav ul li {
+    float: left;
+    text-align: center
+}
+
+div#nav a {
+    text-decoration: none
+}
+
+div#nav div.top {
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    background: #0e354d
+}
+
+div#nav div.top > div {
+    width: 960px;
+    margin: 0 auto
+}
+
+div#nav div.top a {
+    color: #FFF
+}
+
+div#nav div.top ul li ul {
+    display: none
+}
+
+div#nav div.top ul li {
+    position: relative;
+    width: 96px;
+    text-align: center;
+    line-height: 30px
+}
+
+div#nav div.top ul li.mwide {
+    width: 115px
+}
+
+div#nav div.top ul li.wide {
+    width: 162px
+}
+
+div#nav div.bottom {
+    width: 100%;
+    height: 24px;
+    background: #555555
+}
+
+div#nav div.bottom > div {
+    width: 960px;
+    margin: 0 auto
+}
+
+div#nav div.bottom a {
+    color: #fff;
+    line-height: 24px
+}
+
+div#nav div.top a:hover, div#nav div.top .current > a {
+    color: #2EABDD
+}
+
+div#nav div.bottom a:hover {
+    color: #2EABDD
+}
+
+div#nav div.top.bottom .current > a {
+    color: #9CCEE2
+}
+
+div#nav div.bottom ul li {
+    width: 120px
+}
+
+div#nav div.top li.highlight ul {
+    display: block;
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 11;
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    -moz-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #0e354d;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9
+}
+
+div#nav div.top li.highlight ul li a {
+    text-align: left;
+    display: block;
+    width: 140px;
+    height: 30px;
+    padding: 0 0 0 10px;
+    margin: 0;
+    float: left;
+    border-bottom: 1px solid #134767
+}
+
+div#nav div.top li.highlight ul li a:hover {
+    background: #134767;
+    color: #c0e9ff
+}
+
+div#nav div.top li.highlight ul li.last a {
+    border-bottom: none;
+    -moz-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+div#nav div.top li.highlight ul {
+    margin-top: -6px
+}
+
+div#nav div.top.gray ul li {
+    line-height: 23px;
+    position: relative
+}
+
+div#nav div.top li.highlight ul {
+    display: block;
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 11;
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    -moz-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #0e354d;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9
+}
+
+div#nav div.top li.highlight ul li a {
+    text-align: left;
+    display: block;
+    width: 140px;
+    height: 30px;
+    padding: 0 0 0 10px;
+    margin: 0;
+    float: left;
+    border-bottom: 1px solid #134767
+}
+
+div#nav div.top li.highlight ul li a:hover {
+    background: #134767;
+    color: #c0e9ff
+}
+
+div#nav div.top li.highlight ul li.last a {
+    border-bottom: none;
+    -moz-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+div#greystrip {
+    width: 100%;
+    height: 30px;
+    background: #555555;
+    margin: 0 auto 10px auto
+}
+
+div#greystrip > div {
+    width: 960px;
+    height: 20px;
+    margin: 0 auto;
+    padding: 2px 0
+}
+
+div#greystrip > div > div.left {
+    float: left
+}
+
+div#greystrip > div > div.left > div {
+    width: 20px;
+    height: 20px;
+    float: left;
+    cursor: pointer
+}
+
+div#greystrip > div > div.left > div.icon-pool-hotel {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/swimmer.gif') top left no-repeat;
+    width: 103px;
+    float: left;
+    margin: 4px 40px 0 0
+}
+
+div#greystrip > div > div.left > div.icon-pool-hotel a {
+    display: block;
+    text-indent: -9999px
+}
+
+div#greystrip > div > div.left > div.icon-aerial-tour {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/icon-aerial-tour.png') top left no-repeat;
+    margin-left: 30px
+}
+
+div#greystrip > div > div.left > a.specials {
+    color: #CCCCCC;
+    float: left;
+    font-size: 12px;
+    padding: 6px 4px;
+    margin: 2px 40px 0 0px;
+    cursor: pointer;
+    text-decoration: none
+}
+
+div#greystrip > div > div.left > a.specials.rooms {
+    color: #CCCCCC;
+    float: left;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 6px 40px 0px 35px;
+    cursor: pointer;
+    text-decoration: none
+}
+
+div#greystrip > div > div.left > a.specials.suite {
+    color: #CCCCCC;
+    float: left;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 6px 40px 0px 35px;
+    cursor: pointer;
+    text-decoration: none
+}
+
+div#greystrip > div > div.left > a.booknow {
+    color: #CCCCCC;
+    float: left;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 2px 40px 0 0px;
+    cursor: pointer;
+    text-decoration: none
+}
+
+div#greystrip > div > div.left > a.specials:hover {
+    color: #2EABDD
+}
+
+div#greystrip > div > div.right {
+    float: right;
+    margin-right: 7px
+}
+
+div#greystrip > div > div.right > div.reservations {
+    background: #2EABDD;
+    border: 1px solid #C6C6C6;
+    color: #333333;
+    float: right;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 5px 0 0 0;
+    cursor: pointer
+}
+
+div#greystrip > div > div.left > div.tooltip {
+    display: none;
+    font-size: 11px;
+    border-radius: 90px;
+    -moz-border-radius: 10px;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    background: #999;
+    z-index: 99;
+    width: 225px;
+    height: 150px
+}
+
+div#greystrip > div > div.left > div.tooltip > div {
+    width: 225px;
+    height: 150px;
+    background: #333;
+    border-radius: 80px;
+    text-align: center;
+    position: relative
+}
+
+div#greystrip > div > div.left > div.tooltip > div > span {
+    color: #FFF;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px 7px;
+    width: 145px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px
+}
+
+div#greystrip > div > div.left > div.icon-pool-hotel-tooltip.tooltip > div {
+    background: #333 url('http://theinnatbowmanshill.com/assets/1.0.41/images/pool-tooltip.jpg') top left no-repeat
+}
+
+div#greystrip > div > div.left > div.icon-aerial-tooltip.tooltip > div {
+    background: #333 url('http://theinnatbowmanshill.com/assets/1.0.41/images/aerial-tooltip.jpg') top left no-repeat
+}
+
+div#greystrip > div > div.left > div.icon-aerial-tooltip.tooltip div span {
+    top: 110px;
+    width: 135px
+}
+
+div.close {
+    width: 36px;
+    height: 36px;
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/close.png') top left no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 100
+}
+
+div#greystrip .seeother {
+    background: #2EABDD !important;
+    color: #333 !important;
+    padding: 2px !important;
+    margin: 5px 0 0 0 !important;
+    border: 1px solid #C6C6C6 !important
+}
+
+div#greystrip .these {
+    color: #FF8E00 !important;
+    background: #333 !important;
+    padding: 2px !important;
+    margin: 5px 1px 0 0 !important;
+    border: 1px solid #C6C6C6 !important
+}
+
+div#greystrip > div > div.left > div.fb_icon {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') 0 0;
+    width: 20px;
+    height: 20px;
+    margin: 5px 4px 0 0
+}
+
+div#greystrip > div > div.left > div.fb_icon:hover {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') 0 20px;
+    width: 20px;
+    height: 20px;
+    margin: 5px 4px 0 0
+}
+
+div#greystrip > div > div.left > div.fb_icon a {
+    display: block;
+    text-indent: -9999px;
+    box-sizing: border-box;
+    border: #6e8ea3 1px solid
+}
+
+div#greystrip > div > div.left > div.tw_icon {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') -24px 0;
+    width: 20px;
+    height: 20px;
+    margin: 5px 4px 0 0
+}
+
+div#greystrip > div > div.left > div.tw_icon:hover {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') -24px 20px;
+    width: 20px;
+    height: 20px;
+    margin: 5px 4px 0 0
+}
+
+div#greystrip > div > div.left > div.tw_icon a {
+    display: block;
+    text-indent: -9999px;
+    box-sizing: border-box;
+    border: #6e8ea3 1px solid
+}
+
+div#greystrip > div > div.left > div.yt_icon {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') -192px 0;
+    width: 20px;
+    height: 20px;
+    margin: 5px 4px 0 0
+}
+
+div#greystrip > div > div.left > div.yt_icon:hover {
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/socials.png') -192px 20px;
+    width: 20px;
+    height: 20px;
+    margin: 5px 4px 0 0
+}
+
+div#greystrip > div > div.left > div.yt_icon a {
+    display: block;
+    text-indent: -9999px;
+    box-sizing: border-box;
+    border: #6e8ea3 1px solid
+}
+
+div.shadow {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    margin: 0 auto;
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/shadow.png') top center no-repeat;
+    height: 42px;
+    width: 1001px;
+    z-index: 99
+}
+
+div#slides_wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/moulin.png')
+}
+
+div#slides {
+    position: relative;
+    width: 960px;
+    height: 450px;
+    margin: 0 auto
+}
+
+div#slides div.slide, div#onCommandSlide {
+    width: 960px;
+    height: 450px
+}
+
+div#slides div.caption {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    font-family: 'carisma-light';
+    color: #FFF;
+    width: 305px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px 10px 20px 10px
+}
+
+div#slides div.caption.bottom-left {
+    top: 260px
+}
+
+div#slides div.caption.bottom-right {
+    top: 260px;
+    left: 635px
+}
+
+div#slides div.caption.top-right {
+    top: 22px;
+    left: 635px
+}
+
+div#slides div.caption span {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 7px;
+    text-shadow: 1px 2px 1px #000000
+}
+
+div#slides div.caption h1 {
+    font-size: 24px
+}
+
+.navigation {
+    position: absolute;
+    top: 180px;
+    width: 56px;
+    height: 84px;
+    cursor: pointer;
+    z-index: 19
+}
+
+.prev {
+    left: 0;
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/arrows.png') top left no-repeat
+}
+
+.next {
+    right: 0;
+    background: url('http://theinnatbowmanshill.com/assets/1.0.41/images/arrows.png') top right no-repeat
+}
+
+#goto {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 19;
+    display: none
+}
+
+#goto a {
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: #FFF;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    background: #CCC;
+    float: left;
+    margin-left: 7px
+}
+
+#goto a.current {
+    background: #0ba0e4
+}
+
+#goto a:hover {
+    cursor: pointer;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+
+
+
+div#thumbnailHeader1, div#thumbnailHeader2 {
+    font-size: 1.6em;
+    margin: 2em 0 1em;
+    width: 960px;
+    color: #999999
+}
+
+div.thumbnail-outer-wrapper .navigation {
+    top: 30px
+}
+
+div.thumbnail-outer-wrapper {
+    display: none
+}
+
+a.thumbnail.last {
+    margin-right: 0
+}
+
+div.thumbHighlight.top {
+    border-top: 1px solid #2EABDD
+}
+
+div.thumbHighlight.bottom {
+    border-top: 2px solid #2EABDD
+}
+
+div.thumbHighlight.left, div.thumbHighlight.right {
+    border-right: 1px solid #2EABDD
+}
+
+div.thumbHighlight {
+    z-index: 1;
+    position: absolute
+}
+
+div.thumbnailWrapper {
+    background: url(images/lshadows.jpg) left center no-repeat;
+
+
+    padding: 0 20px 0 0;
+    float: left;
+    width: 230px;
+    display: inline-block;
+    cursor: pointer
+}
+
+div.thumbnailWrapper > div {
+    margin: 0 15px;
+}
+div.thumbnailWrapper .title {
+    font-family: "carisma-light";
+    font-size: 1.75em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+a.thumbnail {
+    float: left;
+    width: 230px;
+    height: 175px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 1.5em;
+}
+
+div.thumbnailWrapper ul li {
+    display:inline-block;
+    border-left:1px solid #999999;
+    padding: 0 5px 0 7px;
+    margin: 5px 0 10px;
+    font-size: inherit;
+}
+div.thumbnailWrapper ul li:first-child {
+    border-left:none;
+    padding-left: 0;
+}
+
+
+#onCommandSlide_container {
+    display: none
+}
+
+a#thumbnail-1-1 {
+    background: #7f7f7f url('images/width230/orchard-retreat.jpg') top center no-repeat
+}
+
+
+a#thumbnail-1-2 {
+    background: #7f7f7f url('images/width230/hidden-pines.jpg') top center no-repeat
+}
+
+
+a#thumbnail-1-3 {
+    background: #7f7f7f url('images/width230/fountain-view.jpg') top center no-repeat
+}
+
+
+a#thumbnail-1-4 {
+    background: #7f7f7f url('images/width230/pond-vista.jpg') top center no-repeat
+}
+
+
+a#thumbnail-2-1 {
+    background: #7f7f7f url('images/width230/penthouse.jpg') top left no-repeat
+}
+
+
+
+a#thumbnail-2-2 {
+    background: #7f7f7f url('images/width230/washington.jpg') top center no-repeat
+}
+
+
+
+a#thumbnail-2-3 {
+    background: #7f7f7f url('images/width230/english-manor.jpg') top center no-repeat
+}
+
+
+
+a#thumbnail-2-4 {
+    background: #7f7f7f url('images/width230/regal-tower.jpg') top center no-repeat
+}
+
+
+div#slides div.slide1 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide2 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide3 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide4 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide5 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide6 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide7 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide8 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide9 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide10 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide11 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide12 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide13 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide14 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide15 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide16 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide17 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide18 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide19 {
+    background: url('') top left no-repeat
+}
+
+div#slides div.slide20 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-1 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-2 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-3 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-4 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-5 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-6 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-7 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-8 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-9 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-10 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-11 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-12 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-13 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-14 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-15 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-16 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-17 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-18 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-19 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-20 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-21 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-22 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-23 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-24 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-25 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-26 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-27 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-28 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-29 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-30 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-31 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-32 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-33 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-34 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-35 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-36 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-37 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-38 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-39 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-40 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-41 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-42 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-43 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-44 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-45 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-46 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-47 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-48 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-49 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-1-50 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-1 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-2 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-3 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-4 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-5 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-6 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-7 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-8 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-9 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-10 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-11 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-12 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-13 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-14 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-15 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-16 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-17 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-18 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-19 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-20 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-21 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-22 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-23 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-24 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-25 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-26 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-27 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-28 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-29 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-30 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-31 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-32 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-33 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-34 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-35 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-36 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-37 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-38 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-39 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-40 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-41 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-42 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-43 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-44 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-45 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-46 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-47 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-48 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-49 {
+    background: url('') top left no-repeat
+}
+
+div.onCommandSlide-2-50 {
+    background: url('') top left no-repeat
+}
+
+div#thumbnail-1-outer-wrapper, div#thumbnail-2-outer-wrapper {
+    width: auto;
+    display: inline;
+}
+
+div#thumbnails-a, div#thumbnails-b {
+    height: auto;
+}
+
+div#thumbnail-1-outer-wrapper .thumbnailWrapper {
+    height:520px
+}
+
+div#thumbnail-2-outer-wrapper .thumbnailWrapper {
+    height:570px
+
+}
+
+div#thumbnail-a-wrapper, div#thumbnail-b-wrapper {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+div#roomRates, div#suiteRates {
+    position: absolute;
+    color: #333;
+    bottom: 4px
+}
+
+div#roomRates.individual, div#suiteRates.individual {
+    position: absolute;
+    color: #333;
+    top: 861px;
+    height: 15px
+}
+
+div#roomRates ul, div#suiteRates ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+div#roomRates li, div#suiteRates li {
+    display: inline-block;
+    width: 225px;
+    text-align: center
+}
+
+div#roomRates li:nth-child(2), div#suiteRates li:nth-child(2) {
+    padding-left: 15px
+}
+
+div#roomRates li:nth-child(3), div#suiteRates li:nth-child(3) {
+    padding-left: 15px
+}
+
+div#roomRates li:nth-child(4), div#suiteRates li:nth-child(4) {
+    padding-left: 15px
+}
+
+div#thumbnailHeader1, div#thumbnailHeader2 {
+    font-size: 1.6em;
+    margin: 2em 0 1em;
+    width: 960px;
+    margin: 0 auto;
+    color: #999999
+}
+
+div.thumbnail-outer-wrapper .navigation {
+    top: 30px
+}
+
+div.thumbnail-outer-wrapper {
+    display: none
+}
+
+a.thumbnail.last {
+    margin-right: 0
+}
+
+div.thumbHighlight.top {
+    border-top: 1px solid #2EABDD
+}
+
+div.thumbHighlight.bottom {
+    border-top: 2px solid #2EABDD
+}
+
+div.thumbHighlight.left, div.thumbHighlight.right {
+    border-right: 1px solid #2EABDD
+}
+
+div.thumbHighlight {
+    z-index: 1;
+    position: absolute
+}
+
+
+
+a.thumbnail div {
+    width: 228px;
+    height: 170px;
+    position: absolute
+}
+
+#onCommandSlide_container {
+    display: none
+}
+
+
+div#secondRoom {
+    float: right;
+    text-align: center;
+    margin-right: 2px;
+    position: relative
+}
+
+div#addedGuest {
+    float: left;
+    text-align: center;
+    position: relative
+}
+
+div#extraGuestRate, div#extraRoomRate {
+    position: absolute;
+    bottom: 9px;
+    left: 104px;
+    color: #333
+}
+
+div#container {
+    background-color: #FFFFFF;
+    display:inline-block;
+    width:100%;
+    padding: 2.5em 0;
+}
+div#text {
+    max-width: 960px;
+    width:100%;
+    margin: 0 auto;
+    color: #545454;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    font-family: Arial, Helvetica, Sans-Serif
+}
+
+div#text h2 {
+    font-size: 2em;
+    margin: 1em 0 1em 0
+}
+
+div#text h3 {
+    font-size: 1.5em;
+    margin: 2em 0 1em 0
+}
+
+div#text a {
+    color: #2EABDD;
+    text-decoration: none
+}
+
+div#text p {
+    margin-bottom: 1.6em
+}
+
+div#text p.orange {
+    color: #FF8E00
+}
+
+div.text-block {
+    clear: both;
+    display: inline-block;
+}
+div.text-block .info {
+    float: left;
+    padding: 50px 76px 0 0;
+    width: 345px;
+}
+div#text div.text-block .info h2 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+div.text-block .info p {
+    font-family: "carisma-light";
+    font-size: 1.75em;
+    line-height: 1.35em;
+}
+
+
+div#secondRoom {
+    float: right;
+    text-align: center
+}
+
+.nohtag {
+    margin-bottom: 2em
+}
+
+#rateTable {
+    width: 35%;
+    border: collapse
+}
+
+#rateTable td {
+    border: 1px solid #333;
+    padding: 2px
+}
+
+#roomSuiteName {
+    float: left
+}
+
+#roomSuiteAvail {
+    background: #2EABDD;
+    border: 1px solid #C6C6C6;
+    color: #333333;
+    float: right;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 42px 0 0 0;
+    cursor: pointer
+}
+
+.orange {
+    color: #FF8E00;
+    text-transform: uppercase;
+    font-size: 110%
+}
+
+div#text .individual a {
+    color: #333
+}
+
+div#extraRoomRate a {
+    color: #333
+}
+
+div#extraGuestRate a {
+    color: #333
+}
+
+div#footer {
+    margin-top: 0;
+    padding-top: 2em;
+    background: #363839;
+    border-top: 12px solid #595959;
+    width: 100%
+}
+
+div#footer div#bottomband {
+    width: 100%;
+    background: #282a2b;
+    border-top: 1px solid #4b4c4d;
+    border-bottom: 1px solid #000
+}
+
+div#footer div#bottomband div.organizer {
+    padding: 2em 0;
+    width: 960px;
+    margin: 0 auto;
+    color: #8C8989;
+    text-shadow: 1px 2px 1px #000000;
+    font-size: 12px;
+    position: relative
+}
+
+div.social {
+    position: relative;
+    top: -0.5em;
+    float: right;
+    width: 400px;
+    height: 32px;
+    padding: 0;
+    text-align: right
+}
+
+div#centerfoot {
+    margin: 2em auto 2em auto;
+    width: 960px;
+    display: block
+}
+
+div#centerfoot div.clear {
+    display: table-row
+}
+
+div#centerfoot p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #8C8989
+}
+
+div#centerfoot p em {
+    color: #FF8E00
+}
+
+div#centerfoot div.clear div {
+    width: 180px;
+    float: left;
+    padding-right: 60px;
+    min-height: 200px
+}
+
+div#centerfoot div.clear div.waldorf {
+    width: 230px
+}
+
+div#centerfoot div.clear div.resources {
+    width: 120px
+}
+
+div#centerfoot div.clear div.contact {
+    width: 200px;
+    color: #8C8989;
+    font-size: 13px;
+    line-height: 20px
+}
+
+div#centerfoot div.clear div#flickr {
+    width: 230px
+}
+
+div#centerfoot div.clear div.contact em {
+    font-weight: bold;
+    font-style: normal;
+    color: #BFBFBF;
+    text-shadow: 1px 2px 1px #000000
+}
+
+div#centerfoot div.clear div.contact address {
+    display: block;
+    margin-bottom: 1em
+}
+
+div#centerfoot div.clear div.contact a {
+    color: #BFBFBF;
+    text-decoration: none;
+    text-shadow: 1px 2px 1px #000000
+}
+
+div#centerfoot div.clear div.contact a:hover {
+    color: #FF8E00
+}
+
+div#centerfoot div.clear div.last {
+    padding-right: 0
+}
+
+div#centerfoot strong.title {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'carisma-light';
+    font-weight: normal;
+    color: #FFF;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 15px
+}
+
+div#centerfoot strong.caps {
+    display: block;
+    color: #DDD;
+    font-size: 13px;
+    line-height: 28px;
+    margin-bottom: 15px
+}
+
+div#centerfoot ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid #282a2b;
+    border-top: 1px solid #585151
+}
+
+div#centerfoot ul li.first {
+    padding-top: 0;
+    border-top: none
+}
+
+div#centerfoot ul li.last {
+    border-bottom: none
+}
+
+div#centerfoot ul li a {
+    color: #BFBFBF;
+    text-shadow: 1px 2px 1px #000000;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 15px
+}
+
+div#centerfoot ul li a:hover {
+    color: #FF8E00
+}
+
+div#centerfoot strong.title span {
+    color: #FF8E00
+}
+
+div#flickr ul li {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    float: left;
+    border: 0;
+    display: block
+}
+
+div#flickr ul li.start {
+    padding-left: 0;
+    clear: both
+}
+
+div#flickr ul li.end {
+    padding-right: 0
+}
+
+div#flickr ul li img {
+    width: 50px;
+    height: 50px
+}
+
+div#text p.orange {
+    color: #FF8E00
+}
+
+#text h2 {
+    margin: 1em 0
+}
+
+#text h2 a {
+    font-size: .5em;
+    color: #2EABDD;
+    text-decoration: none;
+    position: relative;
+    top: 0em;
+    left: 2em;
+    font-family: Arial, Helvetica, Sans-Serif
+}
+
+.individual a {
+    color: #333
+}
+
+.zup {
+    z-index: 1
+}
+
+div#text div.zup a {
+    color: #333
+}
+
+@media (max-width: 959px) {
+    div#main-wrapper {
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    div#container {
+        padding: 4em 0;
+    }
+    div#text {
+        display: block;
+        width: auto;
+        margin: 0 1.5em;
+    }
+    div.text-block .info {
+        float: none;
+        padding: 0;
+        margin: 0 0 1em;
+        width: auto;
+        display: block;
+    }
+    div#thumbnail-1-outer-wrapper, div#thumbnail-2-outer-wrapper {
+        width: auto;
+        display: block;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    div.thumbnailWrapper {
+        padding: 0 12px 0 0;
+    }
+}
