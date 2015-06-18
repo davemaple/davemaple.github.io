@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+		/* reset */
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>
+		var AWS = {};
+
+		AWS.config = {
+		    region: 'us-east-1',
+		    accessKeyId: 'AKIAJTCGSXISBAK427RQ',
+		    secretAccessKey: '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'
+		};
+
+		function getSignatureKey(key, dateStamp, regionName, serviceName) {
+		    console.log([key, dateStamp, regionName, serviceName]);
+		    var kDate = CryptoJS.HmacSHA256(dateStamp, "AWS4" + key, { asBytes: true });
+		    var kRegion = CryptoJS.HmacSHA256(regionName, kDate, { asBytes: true });
+		    var kService = CryptoJS.HmacSHA256(serviceName, kRegion, { asBytes: true });
+		    return CryptoJS.HmacSHA256("aws4_request", kService, { asBytes: true });
+		}
+
+		function sign(service, method, host, payload, amzdate, datestamp) {
+		    console.log([service, method, host, payload, amzdate, datestamp]);
+
+		    // Step 1 - Create canonical request.
+		    var uri = '/' + AWS.Lambda.apiVersion + '/functions/' + 'HelloWorld' + '/invocations';
+		    var queryString = '';
+		    var canonicalHeaders = 'host:' + host + '\n' + 'x-amz-date:' + amzdate + '\n' + 'x-amz-invocation-type:RequestResponse' + '\n' + 'x-amz-log-type:None' + '\n';
+		    var signedHeaders = 'host;x-amz-date;x-amz-invocation-type;x-amz-log-type';
+		    var payloadHash = CryptoJS.SHA256(payload);
+		    var canonicalRequest = method + '\n' + uri + '\n' + queryString + '\n' + canonicalHeaders + '\n' + signedHeaders + '\n' + payloadHash;
+		    console.log(canonicalRequest);
+		    
+		    // Step 2 - Create the string to sign.
+		    var algorithm = 'AWS4-HMAC-SHA256';
+		    var credentialScope = datestamp + '/' + AWS.config.region + '/' + service + '/' + 'aws4_request';
+		    var stringToSign = algorithm + '\n' +  amzdate + '\n' +  credentialScope + '\n' +  CryptoJS.SHA256(canonicalRequest);
+		    console.log(stringToSign);
+		    
+		    // Step 3 - Calculate the signature.
+		    var signingKey = getSignatureKey(AWS.config.secretAccessKey, datestamp, AWS.config.region, service);
+		    console.log('' + signingKey);
+		    
+		    var signature = CryptoJS.HmacSHA256(stringToSign, signingKey, { asBytes: true });
+		    console.log('' + signature);
+		    
+		    // Step 4 - Add signing information to the request.
+		    return algorithm + ' Credential=' + AWS.config.accessKeyId + '/' + credentialScope + ', SignedHeaders=' + signedHeaders + ', Signature=' + signature;
+		}
+
+		AWS.Lambda = {
+		    apiVersion: '2015-03-31',
+		    invoke: function(params, callback) {
+		        var method = 'POST';
+		        var host = 'lambda.' + AWS.config.region + '.amazonaws.com';
+		        var service = 'lambda';
+		        var amzdate = moment().utc().format('YYYYMMDD[T]HHmmss[Z]');
+		        var datestamp = moment().utc().format('YYYYMMDD');
+		        
+		        var authHeader = sign(service, method, host, params.Payload, amzdate, datestamp);
+		        console.log(authHeader);
+		        
+		        var headers = {
+		            'X-Amz-Date': amzdate,
+		            'Authorization': authHeader,
+		            'X-Amz-Invocation-Type': params.InvocationType,
+		            'X-Amz-Log-Type': params.LogType,
+		            'Content-Type': 'text/plain;charset=UTF-8'
+		        };
+		        console.log(headers);
+		        
+		        $.ajax({
+		            url: 'https://lambda.' + AWS.config.region + '.amazonaws.com/' + AWS.Lambda.apiVersion + '/functions/' + params.FunctionName + '/invocations',
+		            method: method,
+		            headers: headers,
+		            data: params.Payload,
+		            dataType: 'text'
+		        }).done(function(data) {
+		            callback(null, {Payload: data});
+		        });
+		    }
+		};
+
+		var payload = {
+		    'firstName': 'Dave',
+		    'lastName': 'Maple'
+		};
+
+		var params = {
+		    FunctionName: 'HelloWorld',
+		    InvocationType: 'RequestResponse',
+		    LogType: 'None',
+		    Payload: JSON.stringify(payload)
+		};
+
+		AWS.Lambda.invoke(params, function(ex, data) {
+		    var response = JSON.parse(data.Payload);
+		    $('#result').text(response.message);
+		});
+	</script>
+
+</head>
+
+<body>
+	
+	<div id="result"></div>
+	
+</body>
+
+</html>
+
