@@ -21,7 +21,6 @@
 		};
 
 		function getSignatureKey(key, dateStamp, regionName, serviceName) {
-		    console.log([key, dateStamp, regionName, serviceName]);
 		    var kDate = CryptoJS.HmacSHA256(dateStamp, "AWS4" + key, { asBytes: true });
 		    var kRegion = CryptoJS.HmacSHA256(regionName, kDate, { asBytes: true });
 		    var kService = CryptoJS.HmacSHA256(serviceName, kRegion, { asBytes: true });
