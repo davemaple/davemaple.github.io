@@ -78,7 +78,7 @@
 		            dataType: 'text'
 		        }).done(function(data) {
 		            callback(null, {Payload: data});
-		        }).fail((xhr, status, ex) {
+		        }).fail(xhr, status, ex) {
 		        	alert(ex);
 		        });;
 		    }
