@@ -78,6 +78,8 @@
 		            dataType: 'text'
 		        }).done(function(data) {
 		            callback(null, {Payload: data});
+		        }).error((xhr, status, ex) {
+		        	alert(ex);
 		        });
 		    }
 		};
@@ -95,10 +97,7 @@
 		};
 
 		$(document).ready(function() {
-			alert('test');
 			AWS.Lambda.invoke(params, function(ex, data) {
-				alert(ex);
-
 			    var response = JSON.parse(data.Payload);
 			    $('#result').text(response.message);
 			});
