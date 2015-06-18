@@ -29,7 +29,6 @@
 		}
 
 		function sign(service, method, host, payload, amzdate, datestamp) {
-		    console.log([service, method, host, payload, amzdate, datestamp]);
 
 		    // Step 1 - Create canonical request.
 		    var uri = '/' + AWS.Lambda.apiVersion + '/functions/' + 'HelloWorld' + '/invocations';
@@ -38,20 +37,16 @@
 		    var signedHeaders = 'host;x-amz-date;x-amz-invocation-type;x-amz-log-type';
 		    var payloadHash = CryptoJS.SHA256(payload);
 		    var canonicalRequest = method + '\n' + uri + '\n' + queryString + '\n' + canonicalHeaders + '\n' + signedHeaders + '\n' + payloadHash;
-		    console.log(canonicalRequest);
 		    
 		    // Step 2 - Create the string to sign.
 		    var algorithm = 'AWS4-HMAC-SHA256';
 		    var credentialScope = datestamp + '/' + AWS.config.region + '/' + service + '/' + 'aws4_request';
 		    var stringToSign = algorithm + '\n' +  amzdate + '\n' +  credentialScope + '\n' +  CryptoJS.SHA256(canonicalRequest);
-		    console.log(stringToSign);
 		    
 		    // Step 3 - Calculate the signature.
 		    var signingKey = getSignatureKey(AWS.config.secretAccessKey, datestamp, AWS.config.region, service);
-		    console.log('' + signingKey);
 		    
 		    var signature = CryptoJS.HmacSHA256(stringToSign, signingKey, { asBytes: true });
-		    console.log('' + signature);
 		    
 		    // Step 4 - Add signing information to the request.
 		    return algorithm + ' Credential=' + AWS.config.accessKeyId + '/' + credentialScope + ', SignedHeaders=' + signedHeaders + ', Signature=' + signature;
@@ -67,7 +62,6 @@
 		        var datestamp = moment().utc().format('YYYYMMDD');
 		        
 		        var authHeader = sign(service, method, host, params.Payload, amzdate, datestamp);
-		        console.log(authHeader);
 		        
 		        var headers = {
 		            'X-Amz-Date': amzdate,
@@ -76,7 +70,6 @@
 		            'X-Amz-Log-Type': params.LogType,
 		            'Content-Type': 'text/plain;charset=UTF-8'
 		        };
-		        console.log(headers);
 		        
 		        $.ajax({
 		            url: 'https://lambda.' + AWS.config.region + '.amazonaws.com/' + AWS.Lambda.apiVersion + '/functions/' + params.FunctionName + '/invocations',
