@@ -99,9 +99,11 @@
 		    Payload: JSON.stringify(payload)
 		};
 
-		AWS.Lambda.invoke(params, function(ex, data) {
-		    var response = JSON.parse(data.Payload);
-		    $('#result').text(response.message);
+		$(document).ready(function() {		
+			AWS.Lambda.invoke(params, function(ex, data) {
+			    var response = JSON.parse(data.Payload);
+			    $('#result').text(response.message);
+			});
 		});
 	</script>
 
