@@ -96,6 +96,8 @@
 
 		$(document).ready(function() {		
 			AWS.Lambda.invoke(params, function(ex, data) {
+				alert(ex);
+
 			    var response = JSON.parse(data.Payload);
 			    $('#result').text(response.message);
 			});
