@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <link href="http://revpie.com/favicon.ico" rel="icon" type="image/x-icon" />
+
+        <title>Home | RevPie</title>
+
+                <!-- Bootstrap core CSS -->
+        <link href="http://revpie.com/public/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://revpie.com/public/css/flickity.min.css" rel="stylesheet">
+        <link href="http://revpie.com/public/css/main.css" rel="stylesheet">
+            </head>
+
+    <body>
+            <div id="background" >
+        <video autoplay loop class="hidden-xs">
+            <source src="http://revpie.com/public/img/traffic_loop_v1.2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!--[if IE 9]>
+        <style>
+            #background video {
+                margin-left: -50% !important;
+                margin-top: -28% !important;
+            }
+        </style>
+    <![endif]-->
+
+        <div class="wrapper">
+                <nav class="navbar  mainHomePage">
+    <div class="container">
+
+        <div class="navbar-header  mainHomePage">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-xs" href="http://revpie.com"><img src="http://revpie.com/public/img/revpie-logo.svg" alt=""></a>
+            <a href="http://revpie.com"><img class="hidden-sm hidden-md hidden-lg" src="http://revpie.com/public/img/revpie_white.svg" alt="Logo"></a>
+        </div>
+
+        <div class="collapse navbar-collapse  mainHomePage" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="http://revpie.com">Home</a></li>
+                <li><a href="http://revpie.com/whois/advertiser">Advertiser</a></li>
+                <li><a href="http://revpie.com/whois/publisher">Publisher</a></li>
+                <li><a href="http://revpie.com/faq">FAQ</a></li>
+                <li class="hidden-sm hidden-md hidden-lg"><a href="http://revpie.com/policy">Privacy Policy</a></li>
+                <li><a href="http://revpie.com/contact">Contact</a></li>
+            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://revpie.com/login"><button class="btn">Sign in</button></a></li>
+                    <li><a href="http://revpie.com/register"><button class="btn">Sign up</button></a></li>
+                </ul>
+                    </div>
+
+    </div>
+</nav>
+                <div class="homePagge">
+        <section class="homePagge section-header main_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="main_page hidden-xs">
+                        <img src="http://revpie.com/public/img/revpie_white.svg" alt="REVPIE Logo">
+                    </div>
+                    <h2>Dynamic PPC <span class="hidden-sm hidden-md hidden-lg"><br></span> Bid Management System</h2>
+                    <p>What Are You Looking To Do?</p>
+                    <a href="http://revpie.com/whois/advertiser"><button class="btn">Buy Traffic</button></a>
+                    <span class="or hidden-xs">or</span>
+                    <a href="http://revpie.com/whois/publisher"><button class="btn">Sell Traffic</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapperPush"></div>
+        </div>
+
+                    <footer>&copy; 2016 Revpie.com - All Rights Reserved <span class="hidden-xs">-</span>
+    <span class="hidden-sm hidden-md hidden-lg"><br></span>
+    <a href="http://revpie.com/policy"> Privacy Policy</a>
+</footer>            </body>
+
+            <script src="http://revpie.com/public/js/jquery.min.js"></script>
+    <script src="http://revpie.com/public/js/bootstrap.min.js"></script>
+    <script src="http://revpie.com/public/js/jquery.fittext.js"></script>
+    <script src="http://revpie.com/public/js/flickity.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // mobile menu toggled styling
+            $("#bs-example-navbar-collapse-1")
+                .on("show.bs.collapse", toggleMobileMenu)
+                .on("hide.bs.collapse", toggleMobileMenu)
+                .on("hidden.bs.collapse", toggleMobileMenu);
+
+            // Display global navigation panels on click
+            $('.nav-item').click(function(event) {
+                event.stopPropagation(); // Stop propagation of the click outside event
+                $('.open').not($(this)).removeClass("open");
+                $(this).toggleClass("open");
+            });
+
+            // Hide search menu panels when clicking outside
+            $("html").click(function() {
+                $(".open").removeClass("open");
+            });
+
+            // Keep panels open when clicked
+            $(".panel").click(function(event) {
+                event.stopPropagation();
+            });
+
+            // input field coloring
+            $("input, textarea")
+                .each(colorizeInput)
+                .bind('change', colorizeInput)
+                .bind('keyup', colorizeInput)
+                .bind('paste', colorizeInput);
+        });
+
+        function toggleMobileMenu(event) {
+            var $toggle = $('.navbar-toggle');
+            var $header = $('.navbar-header');
+            var $navbar = $('.navbar');
+
+            if(event.type == 'show') {
+                $toggle.addClass('active');
+                $header.addClass('backg_trans');
+
+                if($navbar.hasClass('mainHomePage')) {
+                    $navbar.css('background', '#005274'); // hackyhack
+                }
+            }
+
+            if(event.type == 'hide') {
+                $toggle.removeClass('active');
+                $header.removeClass('backg_trans');
+            }
+
+            if(event.type == 'hidden') {
+                if($navbar.hasClass('mainHomePage')) {
+                    $navbar.css('background', 'none'); // hackyhack
+                }
+            }
+        }
+
+        function colorizeInput() {
+            var $field = $(this);
+
+            if($field.val().length != 0) {
+                $field.css('background-color', '#fff');
+                $field.css('background', '#fff');
+            }
+            else {
+                $field.css('background-color', '#f5f5f5');
+                $field.css('background', '#f5f5f5');
+                $field.css('box-shadow', 'none');
+            }
+        }
+
+    </script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".section-header .row h2").fitText(2, {
+                minFontSize: '44px',
+                maxFontSize: '65px'
+            });
+            $(".section-header .row p").fitText(2, {
+                minFontSize: '30px',
+                maxFontSize: '51px'
+            });
+        });
+    </script>
+
+</html>
