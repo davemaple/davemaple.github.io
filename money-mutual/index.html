@@ -24,15 +24,18 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
         </div>
         <div class="col-md-6 col-xs-6">
           <div class="toprightDiv">
-            <h3><span>Privacy & security</span>Protected</h3>
+            <h3><span>Privacy &amp; security</span>Protected</h3>
             <img src="images/security-icon.png" alt="Security Icon"> </div>
         </div>
       </div>
     </div>
     <div  class="mbl-image"> <img src="images/mobile-bg2.png" alt="banner" /></div>
     <div class="banner-caption1 clearfix">
-      <h2><span>Looking for</span> a cash<br>
-        Advance?</h2>
+
+      #{articleTemplateBean.article.getRegion('h1') != null && articleTemplateBean.article.getRegion('h1') == 'cash-advance' ? '<h2><span>Looking for</span> a Cash <br />Advance?</h2>' : ''}
+      #{articleTemplateBean.article.getRegion('h1') != null && articleTemplateBean.article.getRegion('h1') == 'payday-loan' ? '<h2><span>Looking for</span> a Payday <br />Loan?</h2>' : ''}
+      #{articleTemplateBean.article.getRegion('h1') != null && articleTemplateBean.article.getRegion('h1') == 'bad-credit-loan' ? '<h2><span>Looking for</span> a Bad Credit <br />Loan?</h2>' : ''}
+
       <div class="imageTv"><img src="images/tv-icon.png" alt="As seen on Tv">
         <h4>Endorsed by<br>
           Montel Williams</h4>
@@ -49,7 +52,7 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
       <div class="zip-field">
       <div class="inputfield slidingLabel">
       <label for="zip" class="errorname">Enter Zip Code</label>
-        <input name="zip" type="text"  maxlength="5" min="5" class="input" />
+        <input id="zip" name="zip" type="text"  maxlength="5" min="5" class="input" />
         
         </div>
         <button id="gtstart" type="submit" class="getstarted-btn">GET STARTED!</button>
@@ -142,26 +145,26 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
       <div class="col-md-12 col-xs-12">
         <div class="footerItems">
           <ul>
-            <li><a href="#">Payday Loans </a></li>
-            <li><a href="#"> Cash Advance </a></li>
-            <li><a href="#"> Bad Credit Loans </a></li>
-            <li><a href="#"> Montel Williams </a></li>
-            <li><a href="#"> Overview </a></li>
-            <li><a href="#"> How it Works </a></li>
-            <li><a href="#"> Customer Service </a></li>
-            <li><a href="#">Returning Customer </a></li>
-            <li><a href="#"> Frequently Asked Questions</a></li>
-            <li><a href="#"> Loan Fees & Repayment</a></li>
-            <li><a href="#"> Reviews</a></li>
-            <li><a href="#"> Money Mutual</a></li>
-            <li><a href="#"> Privacy Policy</a></li>
-            <li><a href="#"> Terms of Use </a></li>
-            <li><a href="#"> Consumer Advisory</a></li>
-            <li><a href="#"> Facebook </a></li>
-            <li><a href="#"> Twitter</a></li>
-            <li><a href="#"> Google +</a></li>
-            <li><a href="#"> Unsubscribe</a></li>
-            <li><a href=""> Sitemap</a></li>
+            <li><a href="https://moneymutual.com/payday-loans/">Payday Loans </a></li>
+            <li><a href="https://moneymutual.com/cash-advance/"> Cash Advance </a></li>
+            <li><a href="https://moneymutual.com/bad-credit-loans/"> Bad Credit Loans </a></li>
+            <li><a href="https://moneymutual.com/montel-williams/"> Montel Williams </a></li>
+            <li><a href="https://moneymutual.com/overview"> Overview </a></li>
+            <li><a href="https://moneymutual.com/how-it-works"> How it Works </a></li>
+            <li><a href="https://moneymutual.com/customer-service"> Customer Service </a></li>
+            <li><a href="https://moneymutual.com/returning-customer-login.html">Returning Customer </a></li>
+            <li><a href="https://moneymutual.com/questions"> Frequently Asked Questions</a></li>
+            <li><a href="https://moneymutual.com/loan-fees-and-repayment"> Loan Fees &amp; Repayment</a></li>
+            <li><a href="https://moneymutual.com/money-mutual-reviews"> Reviews</a></li>
+            <li><a href="https://moneymutual.com/"> Money Mutual</a></li>
+            <li><a href="https://moneymutual.com/privacy-policy"> Privacy Policy</a></li>
+            <li><a href="https://moneymutual.com/terms"> Terms of Use </a></li>
+            <li><a href="https://moneymutual.com/consumer-advisory"> Consumer Advisory</a></li>
+            <li><a href="https://www.facebook.com/moneymutual"> Facebook </a></li>
+            <li><a href="https://twitter.com/moneymutual"> Twitter</a></li>
+            <li><a href="https://plus.google.com/+MoneyMutual/?rel=publisher"> Google +</a></li>
+            <li><a href="https://moneymutual.com/remove-me.html"> Unsubscribe</a></li>
+            <li><a href="https://moneymutual.com/sitemap.html">Sitemap</a></li>
           </ul>
           <div class="footercontent">
             <p><span>*THE OPERATOR OF THIS WEB SITE IS NOT A LENDER,</span> does not broker loans to lenders and does not make short term cash loans or credit decisions. It is not an agent, representative or broker of any lender and does not endorse any lender or charge you for any service or product. </p>
