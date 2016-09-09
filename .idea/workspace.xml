@@ -2,91 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5736ff44-4cbf-402c-855b-cdbaaffc4a1e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/.idea/money-mutual.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/FREELUNCH" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/css/combined.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/css/media.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/css/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Black.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Black.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Black.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Book.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Book.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Book.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Book.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Book.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Heavy.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Heavy.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Heavy.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Heavy.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Heavy.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Light.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Light.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Light.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Medium.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Medium.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Medium.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Medium.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Roman.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Roman.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Roman.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Roman.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/AvenirLTStd-Roman.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/agent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/mc-afee.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/mobile-bg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/money-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/norton.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/reason1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/reason2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/reason3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/security-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/site-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/topSection.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/images/tv-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/js/combined.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/js/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/page2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/render.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/money-mutual/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/0466687.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/578909.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/74421bd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/analytics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/declined.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/e015463.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/en" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/extractor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/f2b06c2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/gtm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/jquery_002.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/offer_files/translator.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/select-test.html" afterPath="$PROJECT_DIR$/select-test.html" />
     </list>
     <ignored path="buzzow_site.iws" />
@@ -113,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/select-test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -334,12 +250,12 @@
       <updated>1461712092976</updated>
       <workItem from="1461712094774" duration="939000" />
       <workItem from="1464271721365" duration="30000" />
-      <workItem from="1473395413111" duration="64000" />
+      <workItem from="1473395413111" duration="281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1033000" />
+    <option name="totallyTimeSpent" value="1250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
@@ -404,7 +320,7 @@
     <entry file="file://$PROJECT_DIR$/select-test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
           <folding />
         </state>
       </provider>
